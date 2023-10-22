@@ -97,7 +97,7 @@ class ExportController extends Controller
             $a=$data[$i]['pivot']['cantidad'];
             $this->pdf->Cell($s[0],7,$a,1,0,'C',$fill);
             $this->pdf->Cell($s[1],7,$data[$i]['descripcion'],1,0,'L',$fill);
-            $b=$data[$i]['pivot']['precio'];
+            $b=$data[$i]['pivot']['precioventa'];
             $this->pdf->Cell($s[2],7,$b,1,0,'C',$fill);
             $c=(float)$a*$b;
             $this->pdf->Cell($s[3],7,number_format($c,2,'.',''),1,0,'R',$fill);

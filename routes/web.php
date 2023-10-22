@@ -12,8 +12,10 @@ use App\Http\Livewire\Compra\Compras;
 use App\Http\Livewire\Fcompra\Formularioc;
 use App\Http\Livewire\Report\Reports;
 use App\Http\Livewire\User\Users;
+use App\Http\Livewire\Inventario\Inventarios;
 
 use App\Http\Controllers\ExportController;
+use App\Http\Controllers\VentasreporteController;
 
 
 
@@ -56,9 +58,13 @@ Route::middleware([
     Route::get('/fcompra/formularioc',Formularioc::class);
     Route::get('/user/users',Users::class);
     Route::get('/report/reports',Reports::class);
+    Route::get('/inventario/inventarios',Inventarios::class);
+
     //Controladores Reportes
 
-    Route::get('/report/reports/que/{id}',[ExportController::class,'miReporte']);
+    //Route::get('/report/reports/que/{id}',[ExportController::class,'miReporte']);
+    Route::get('/notaventa/{id}',[ExportController::class,'miReporte']);
+    Route::get('/reportesventas/{$fechainicio}/{$fechafin}',[VentasreporteController::class,'reportesVentas']);
 
 
 

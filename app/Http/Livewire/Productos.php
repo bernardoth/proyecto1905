@@ -22,7 +22,7 @@ class Productos extends Component
         */
         $this->cat = Categoria::all();
 
-        return view('livewire.producto.productos',[
+        return view('livewire.inventario.inventarios',[
             'productos'=>Producto::where('codigo','like','%'.$this->search.'%')->
             orWhere('descripcion','like','%'.$this->search.'%')->paginate(10),
             'cat'=>$this->cat]);

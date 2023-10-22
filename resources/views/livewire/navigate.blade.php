@@ -84,7 +84,7 @@
                                             </button>
                                         @else
                                             <span class="inline-flex rounded-md">
-                                                <button type="button" class="bg-gray-700 hover:bg-gray-500 inline-flex items-center mt-2 px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-white hover:text-white focus:outline-none transition">
+                                                <button type="button" class="bg-gray-700 hover:bg-gray-500 inline-flex items-center mt-2 px-3 py-3 border border-transparent text-sm leading-4 font-medium rounded-md text-white hover:text-white focus:outline-none transition">
                                                     Reportes
                                                     <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -97,14 +97,18 @@
                                     <x-slot name="content">
                                         <!-- reportes-->
                                         <div class="block px-4 py-2 text-xs bg-slate-300 hover:bg-white text-gray-700">
-
-
-                                        <x-jet-dropdown-link href="{{url('/report/reports')}}">
-                                            Reporte de Inventarios
-                                        </x-jet-dropdown-link>
                                         <x-jet-dropdown-link href="{{url('/venta/reportevs')}}">
                                                 Reporte de ventas
                                         </x-jet-dropdown-link>
+
+                                        <x-jet-dropdown-link href="{{url('/inventario/inventarios')}}">
+                                            Inventarios
+                                        </x-jet-dropdown-link>
+                                        <!-- provional
+                                        <x-jet-dropdown-link href="{{url('/venta/reportevs')}}">
+                                                Reporte de ventas
+                                        </x-jet-dropdown-link>
+                                        -->
 
 
                                         @if (Laravel\Jetstream\Jetstream::hasApiFeatures())

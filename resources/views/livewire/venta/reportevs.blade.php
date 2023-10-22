@@ -19,7 +19,7 @@
                             </div>
             <div class="py-2 col-span-2 px-2 bg-slate-600 ">
 
-                <label class="text-gray-200" for="fechainicio">Fecha de final</label>
+                <label class="text-gray-200" for="fechainicio">Fecha final</label>
 
                 <input wire:model="fechafin" class="block" type="date" name="fechafin" id="fechafin">
             </div>
@@ -28,9 +28,9 @@
                     <!--<button wire:click="nueva()"
                     class="bg-red-500 w-64 hover:bg-red-300 px-10 py-2 my-3 font-bold text-white display:flex align-items: center">
                     PDF</button>-->
-                    <a href=""  target="_blank"  class="bg-red-500 w-64 hover:bg-red-300  px-10 py-2 my-3 font-bold text-white display:flex align-items: center" >
+                    <a href="{{URL::to('/reportesventas/'.$fechainicio.'/'.$fechafin)}}"  target="_blank"  class="bg-red-500 w-64 hover:bg-red-300  px-10 py-2 my-3 font-bold text-white display:flex align-items: center" >
                                     PDF
-                                </a>
+                    </a>
 
 
             </div>
@@ -57,6 +57,7 @@
                                     {{$v->total}}
 
 
+
                             </td>
                         </tr>
                         @endforeach
@@ -77,6 +78,7 @@
             </div>
 
 
+
         </div>
 
 
@@ -84,6 +86,7 @@
     </div>
 
 </div>
+
 @section('script')
     <script>
         function inicio()
@@ -111,7 +114,7 @@
                 total:function(){
                 this.suma = 0;
                 this.vec.forEach((element,item,arr) => {
-                console.log(element.bubu);
+                console.log(element.total);
                 });
                 },
             //linea eliminada

@@ -47,7 +47,7 @@
                                 <button wire:click="eliminar({{$v->id}})" class="bg-purple-500 hover:bg-purple-400 px-4 py-2 display:flex align-items: center"
                                 >Del</button>
 
-                                <a href="{{URL::to('/report/reports/que/'.$v->id)}}"  target="_blank" class="bg-red-900 hover:bg-red-500 text-white font-bold py-2 px-6">
+                                <a href="{{URL::to('/notaventa/'.$v->id)}}"  target="_blank" class="bg-red-900 hover:bg-red-500 text-white font-bold py-2 px-6">
                                     PDF
                                 </a>
                             </td>
