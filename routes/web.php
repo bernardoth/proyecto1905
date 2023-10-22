@@ -64,7 +64,7 @@ Route::middleware([
 
     //Route::get('/report/reports/que/{id}',[ExportController::class,'miReporte']);
     Route::get('/notaventa/{id}',[ExportController::class,'miReporte']);
-    Route::get('/reportesventas/{$fechainicio}/{$fechafin}',[VentasreporteController::class,'reportesVentas']);
+    Route::get('/reportesventas/{fechainicio}/{fechafin}',[VentasreporteController::class,'reportesVentas']);
 
 
 
