@@ -12,7 +12,7 @@ use Livewire\Component;
 class Reportevs extends Component
 {
     public $listaVentas,$venta,$fechainicio,$fechafin,$search;
-    public $listaClientes,$vectorVentas,$rep=[],$b;
+    public $listaClientes,$vectorVentas,$rep=[],$b=0;
 
     public function mount()
     {
@@ -23,7 +23,7 @@ class Reportevs extends Component
     public function render()
     {
         $this->listaClientes = Cliente::all();
-        $this->b = Carbon::createFromFormat('Y-m-d H:i:s.u',$this->fechainicio .' '.'23:00:00.00');
+        $this->b =0;
         $this->listaVentas = Venta::select('ventas.id','ventas.estado','ventas.cliente_id','ventas.updated_at',
         'clientes.nombres','precioventa','cantidad',DB::raw('precioventa * cantidad as total'))
         ->join('clientes','ventas.cliente_id','=','clientes.id')->where('nombres','like','%'.$this->search.'%')
@@ -37,6 +37,11 @@ class Reportevs extends Component
 
         //$prueba= $this->listaVentas->pivot->cantidad;
         $this->vectorVentas = $this->listaVentas->toArray();
+        foreach($this->listaVentas as $item)
+        {
+            $this->b = $this->b + $item->total;
+        }
+        $this->b=number_format($this->b,2,'.',' ');
 
 
 

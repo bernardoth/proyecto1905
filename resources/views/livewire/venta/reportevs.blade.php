@@ -16,7 +16,7 @@
                 <label class="text-gray-200" for="fechainicio">Fecha de inicio</label>
 
                 <input wire:model="fechainicio" class="block" type="date" name="fechainicio" id="fechainicio">
-                            </div>
+            </div>
             <div class="py-2 col-span-2 px-2 bg-slate-600 ">
 
                 <label class="text-gray-200" for="fechainicio">Fecha final</label>
@@ -68,12 +68,12 @@
 
             </div>
             <div class="col-start-7 col-end-7 flex justify-end">
-                    <label class="py-3 font-bold text-gray-300" for="">Total Ventas</label>
+                    <label class="py-6 font-bold text-gray-300" for="">Total Ventas</label>
 
             </div>
-            <div x-text="suma"  class="text-lg font-bold col-start-8 con-end-8 flex  justify-center px-3 py-3 text-gray-700 bg-green-200">
+            <div class="text-lg font-bold col-start-8 col-end-8 flex  justify-center px-3 py-3" >
 
-
+                <input class="text-lg font-bold w-full  px-3 py-3 text-gray-700 bg-green-200" type="text" wire:model="b">
 
             </div>
 

@@ -125,7 +125,7 @@
 
                             <template x-for="row in prod">
                             <tr class="border-b border-gray-500 ">
-                                
+
                                 <td x-text="row.item"></td>
                                 <td x-text="row.descripcion"></td>
                                 <td x-text="row.cantidad"></td>
@@ -270,8 +270,9 @@
         datos:function(){
             //this.convertir();
             this.nuevo = JSON.stringify(this.prod);
+            console.log(this.nuevo);
             Livewire.emit('guardarCompra');
-            window.history.back();
+            window.location.href="http://proyecto1905.me/compra/compras";
 
 
         }

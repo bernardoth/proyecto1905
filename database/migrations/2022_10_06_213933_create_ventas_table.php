@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('ventas', function (Blueprint $table) {
             $table->id();
-            $table->enum('estado', ['PENDIENTE','CANCELADO','PAGADO'])->default('PENDIENTE');
+            $table->enum('estado', ['PROFORMA','PEDIDO','CANCELADO'])->default('PROFORMA');
             $table->foreignId('cliente_id')->constrained();
             $table->foreignId('user_id')->constrained();
             $table->timestamps();

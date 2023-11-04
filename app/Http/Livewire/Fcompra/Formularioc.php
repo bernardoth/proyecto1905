@@ -12,7 +12,7 @@ use App\Models\User;
 
 class Formularioc extends Component
 {
-    public $modProv,$nombreProv,$apellidos,$cinit,$valor,$proveedor,$modalProv,$modalProd;
+    public $modProv,$nombreProv,$apellidos,$cinit,$valor,$modalProv,$modalProd,$idprod;
     public $selectProv,$idcompra,$listaProd=[],$precio,$cantidad,$producto,$descripcion,$subtotal;
     public $actualizar = 0,$compra,$arreglo="primero",$v=[],$lv=[],$estado='PENDIENTE';
     protected $listeners = ['cerrarModal','addProv','addProducto','cerrarModal','guardarCompra','editaCompra'];
@@ -36,7 +36,7 @@ class Formularioc extends Component
                 $v['id'] = $idlista;
                 $v['descripcion'] = $deslista;
                 $v['cantidad'] =$cantidadlista ;
-                $v['precio'] = $preciolista;
+                $v['precioventa'] = $preciolista;
                 $v['subtotal'] = $cantidadlista * $preciolista;
                 array_push($this->lv,$v);
 
@@ -91,7 +91,7 @@ class Formularioc extends Component
     public function nuevoProveedor()
     {
         if ($this->cinit!='') {
-            $this->proveedor = Proveedor::where('cinit',$this->cinit).get();
+            $this->proveedor = Proveedor::where('cinit',$this->cinit)->get();
             if (is_null($this->proveedor)) {
                 $nProv = new Proveedor();
                 $nProv->nombres = $this->nombres;
@@ -150,8 +150,8 @@ class Formularioc extends Component
                 $v->productos()->attach(
                     $elem->id,
                     ['cantidad'=>$elem->cantidad,
-                    'precio' => $elem->precio,
-                    'precioventa'=>$elem->precio
+                    'preciocompra' => $elem->precio,
+
                 ]);
 
 

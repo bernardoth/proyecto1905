@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Livewire\Venta;
-
+use Illuminate\Support\Facades\Auth;
 use Livewire\WithPagination;
 use Livewire\Component;
 use App\Models\Cliente;
@@ -13,8 +13,8 @@ use Carbon\Carbon;
 class Ventas extends Component
 {
     use WithPagination;
-    public $listaVentas,$listaClientes,$nuevaVenta;
-    public $selectClie,$valor,$search='',$fecha='';
+    public $listaVentas,$listaClientes,$nuevaVenta,$usuario;
+    public $selectClie,$valor,$search='',$fecha='',$tipo='PROFORMA';
 
     public function mount()
     {
@@ -22,12 +22,16 @@ class Ventas extends Component
     }
     public function render()
     {
+        $this->usuario =Auth::user();
         $this->listaClientes = Cliente::all();
         //$this->listaVentas = Venta::where('cliente_id','like','%'.$this->search.'%')->get();
         //$this->fecha = '2023-01-01';
         $this->listaVentas = Venta::select('ventas.id','ventas.estado','ventas.cliente_id','ventas.updated_at','clientes.nombres')
-        ->join('clientes','ventas.cliente_id','=','clientes.id')->where('nombres','like','%'.$this->search.'%')->
-        where('ventas.updated_at','>=',$this->fecha)-> orderby('id','desc')->get();
+        ->join('clientes','ventas.cliente_id','=','clientes.id')
+        ->where('nombres','like','%'.$this->search.'%')
+        ->whereDate('ventas.updated_at','>=',$this->fecha)
+        ->where('ventas.estado','=',$this->tipo)
+        ->orderby('id','desc')->get();
 
 
         return view('livewire.venta.ventas');

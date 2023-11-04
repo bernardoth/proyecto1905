@@ -6,8 +6,8 @@
                     Datos Venta
                     <div>
                         <select wire:model ="estado" class="bg-green-600 border-white" name="estado" id="estado">
-                            <option  selected value="PENDIENTE">PENDIENTE</option>
-                            <option value="PAGADO">PAGADO</option>
+                            <option  selected value="PENDIENTE">PROFORMA</option>
+                            <option value="PEDIDO">NOTA DE VENTA</option>
                             <option value="CANCELADO">CANCELADO</option>
                         </select>
                     </div>
@@ -223,46 +223,54 @@
 
 
                 },
-            /*
+
             agregar:function(){
+                if (document.querySelector('#cantidad').value>0) {
+                    let lista = {};
 
-                let lista = {};
+                        lista.id = document.querySelector('#id').value,
+                        lista.descripcion = document.querySelector('#descripcion').value;
+                        lista.cantidad = document.querySelector('#cantidad').value;
+                        var num = document.querySelector('#cantidad').value;
+                        lista.precio = document.querySelector('#precio').value;
+                        lista.subtotal = document.querySelector('#subtotal').value;
+                        //this.limpiar();
+                        console.log(this.prod)
+                        this.prod.forEach((element,item,arr) =>
+                        {
+                            if (element.id==lista.id) {
+                                console.log(element.cantidad);
+                                console.log(lista.cantidad);
+                                console.log(parseInt(element.cantidad)+parseInt(lista.cantidad));
+                                lista.cantidad=parseInt(element.cantidad)+parseInt(lista.cantidad);
+                                console.log('index');
+                                console.log(item);
+                                this.prod.splice(item,1);
 
-                lista.id = document.querySelector('#id').value,
-                lista.descripcion = document.querySelector('#descripcion').value;
-                lista.cantidad = document.querySelector('#cantidad').value;
-                var num = document.querySelector('#cantidad').value;
-                lista.precio = document.querySelector('#precio').value;
-                lista.subtotal = document.querySelector('#subtotal').value;
-                //this.limpiar();
-                console.log(this.prod)
-                this.prod.forEach((element,item,arr) =>
-                {
-                    if (element.id==lista.id) {
-                        console.log(element.cantidad);
-                        console.log(lista.cantidad);
-                        console.log(parseInt(element.cantidad)+parseInt(lista.cantidad));
-                        lista.cantidad=parseInt(element.cantidad)+parseInt(lista.cantidad);
-                        console.log('index');
-                        console.log(item);
-                        this.prod.splice(item,1);
+                            } else {
+                                lista.cantidad = num;
 
-                    } else {
-                        lista.cantidad = num;
-
-                    };
-
-
-                });
-                this.prod.push(lista);
+                            };
 
 
-                this.mostrar();
-                this.limpiar();
+                        });
+                        this.prod.push(lista);
+
+
+                        this.mostrar();
+                        this.limpiar();
+
+                } else {
+
+                    alert('La cantidad debe ser mayor a cero');
+
+                }
+
+
 
 
                 },
-                */
+
                 mostrar:function(){
             this.numero = this.prod.length;
             let cont = 1;

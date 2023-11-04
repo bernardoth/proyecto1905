@@ -25,7 +25,7 @@ class ExportController extends Controller
         $this->pdf->AddFont('Helvetica','','helvetica.php');
         $this->pdf->SetFont('Helvetica','',16);
         //$this->pdf->Cell(100);
-        $this->pdf->Cell(0, 30, 'NOTA DE VENTA', 'T', 1, 'C');
+        $this->pdf->Cell(0, 30, 'PROFORMA', 'T', 1, 'C');
         $this->pdf->SetFont('Helvetica','',10);
         $this->pdf->Cell(0, -20, 'informacion adicional', 0, 1, 'C');
         //$this->pdf->Output('S',$nombre->toDateString(),true);
@@ -98,9 +98,9 @@ class ExportController extends Controller
             $this->pdf->Cell($s[0],7,$a,1,0,'C',$fill);
             $this->pdf->Cell($s[1],7,$data[$i]['descripcion'],1,0,'L',$fill);
             $b=$data[$i]['pivot']['precioventa'];
-            $this->pdf->Cell($s[2],7,$b,1,0,'C',$fill);
+            $this->pdf->Cell($s[2],7,number_format($b,2,'.',' '),1,0,'C',$fill);
             $c=(float)$a*$b;
-            $this->pdf->Cell($s[3],7,number_format($c,2,'.',''),1,0,'R',$fill);
+            $this->pdf->Cell($s[3],7,number_format($c,2,'.',' '),1,0,'R',$fill);
             //$this->pdf->Ln();
             $e=$e+7;
             array_push($total,$c);
@@ -119,7 +119,7 @@ class ExportController extends Controller
         $this->pdf->Cell($s[1],7,'',1,0,'C',false);
 
         $this->pdf->Cell($s[2],7,'Total: ',1,0,'C',true);
-        $this->pdf->Cell($s[3],7,number_format(array_sum($total),2,'.',''),1,0,'R',true);
+        $this->pdf->Cell($s[3],7,number_format(array_sum($total),2,'.',' '),1,0,'R',true);
 
 
     }

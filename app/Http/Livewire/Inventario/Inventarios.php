@@ -24,7 +24,12 @@ class Inventarios extends Component
         $this->cat = Categoria::all();
         if ($this->search !='') {
             $this->productos = Producto::select(
-                'productos.id','productos.descripcion','productos.precio','productos.stock','categorias.nombre')->
+                'productos.id',
+                'productos.descripcion',
+                'productos.precio',
+                'productos.stock',
+                'productos.estado',
+                'categorias.nombre')->
             join('categorias','categorias.id','=','productos.categoria_id')->
             where('productos.descripcion','like','%'.$this->search.'%')->
             get()

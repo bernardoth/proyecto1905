@@ -19,6 +19,8 @@ return new class extends Migration
             $table->string('descripcion', 250);
             $table->decimal('precio', 10, 2);
             $table->integer('stock');
+            $table->decimal('preciocompra',10,2);
+            $table->integer('stockinicial');
             $table->enum('estado',['ACTIVO','INACTIVO'])->default('ACTIVO');
             $table->integer('cant_min')->default(10);
             $table->foreignId('categoria_id')->constrained('categorias');

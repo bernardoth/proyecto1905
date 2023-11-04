@@ -5,7 +5,7 @@
         </div>
         <div class="py-2 col-span-7 px-2 bg-slate-600 ">
 
-            <input wire:model="search" type="text">
+            <input wire:model="search" type="text" placeholder="Buscar Producto">
 
         </div>
         <div>
@@ -20,11 +20,10 @@
                 <thead class="bg-slate-800 h-10 border-2 border-slate-400">
                         <tr >
                             <th class="px-4 py-2">id</th>
-                            <th class="px-4 py-2">Codigo</th>
                             <th class="px-4 py-2">Descripcion</th>
+                            <th class="px-4 py-2">Estado</th>
                             <th class="px-4 py-2">Precio</th>
                             <th class="px-4 py-2">Stock</th>
-                            <th class="px-4 py-2">Estado</th>
                             <th class="px-4 py-2">Categoria</th>
                             <th class="px-4 py-2">Acciones</th>
 
@@ -36,9 +35,15 @@
                         <tr >
                             <td class="border px-4 py-2">{{ $prod->id }}</td>
                             <td class="border px-4 py-2">{{ $prod->descripcion }}</td>
-                            <td class="border px-4 py-2">{{ $prod->nombre}}</td>
+                            <td class="border px-4 py-2">{{ $prod->estado}}</td>
                             <td class="border px-4 py-2">{{ $prod->precio}}</td>
                             <td class="border px-4 py-2">{{ $prod->stock}}</td>
+                            <td class="border px-4 py-2">{{ $prod->nombre}}</td>
+                            <td class="border px-4 py-2">
+                            <a href=""  target="_blank" class="bg-red-900 hover:bg-red-500 text-white font-bold py-2 px-6">
+                                    PDF
+                                </a>
+                            </td>
 
 
 

@@ -3,9 +3,12 @@
 
 
         <div class="inline-block align-bottom w-2/3 rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle " role="dialog" aria-modal="true" aria-labelledby="modal-headline">
-            <div class="py-5 bg-zinc-400 shadow-md shadow-indigo-800/50   px-5">
+            <div class="py-5 bg-slate-600 shadow-md shadow-indigo-800/50   px-5">
                 <div id ="cabeza" class="text-bold w-full font-lg py-2">Lista de Productos</div>
-                <input type="text" class="py-2 mb-2 bg-gray-700 text-white" wire:model="busqueda">
+                <input type="text" class="py-2 mb-2 bg-gray-700 text-white" placeholder="Buscar Producto" wire:model="busqueda">
+                <button wire:click="cerrarModal()" class="bg-blue-500 absolute top-3  right-6 hover:bg-blue-700 text-white font-bold py-2 px-6 ">
+                    Cerrar
+                </button>
                 <table  class=" table-fixed w-full text-center">
                     <thead class="bg-gray-700 text-white px-3  ">
                         <tr>

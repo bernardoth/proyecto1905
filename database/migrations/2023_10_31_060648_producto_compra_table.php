@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->integer('cantidad');
             $table->decimal('preciocompra', 10,2 );
-            $table->decimal('precioventa',10,2);
+            
             $table->foreignId('compra_id')->constrained();
             $table->foreignId('producto_id')->constrained();
             $table->timestamps();

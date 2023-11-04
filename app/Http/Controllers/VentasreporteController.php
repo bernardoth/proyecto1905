@@ -17,16 +17,7 @@ class VentasreporteController extends Controller
     public function reportesVentas($fechainicio,$fechafin)
     {
 
-        /*
-        $listaVentas = Venta::select('ventas.id','ventas.estado','ventas.cliente_id','ventas.updated_at',
-        'clientes.nombres','precioventa','cantidad',DB::raw('precioventa *cantidad as total'))
-        ->join('clientes','ventas.cliente_id','=','clientes.id')
 
-        ->join('producto_venta','ventas.id','=','producto_venta.venta_id')
-        ->whereDate('ventas.updated_at','>=',$a)
-        ->whereDate($b,'<=','ventas.updated_at')
-        ->groupBy('ventas.id')->get();
-        */
         $this->pdf = new myPdf();
         $this->pdf->AddPage('P','Letter');
         $this->pdf->AddFont('Helvetica','','helvetica.php');
@@ -76,6 +67,7 @@ class VentasreporteController extends Controller
         'clientes.nombres','precioventa','cantidad',DB::raw('precioventa *cantidad as total'))
         ->join('clientes','ventas.cliente_id','=','clientes.id')
         ->join('producto_venta','ventas.id','=','producto_venta.venta_id')
+        ->where('ventas.estado','=','PEDIDO')
         ->whereDate('ventas.updated_at','>=',$a)
         ->whereDate('ventas.updated_at','<=',$b)
         ->groupBy('ventas.id')->get();
@@ -119,9 +111,15 @@ class VentasreporteController extends Controller
             $fill = !$fill;
             array_push($total,(float)$item->total);
         }
-        $this->pdf->Text(150,$contador+10,'Total: ');
-        $this->pdf->SetXY(160,$contador+5);
-        $this->pdf->Cell($sizeHeader[3],7,number_format(array_sum($total),2,'.',' '),1,1,'R',true);
+        $this->pdf->SetDrawColor(155);
+        $this->pdf->Line(15,$contador+1,195,$contador+1);
+        //$this->pdf->Text(150,$contador+10,'Total: ');
+        $this->pdf->SetDrawColor(255);
+        $this->pdf->SetXY(15,$contador+5);
+        $this->pdf->Cell($sizeHeader[0],7,'',1,0,'C',false);
+        $this->pdf->Cell($sizeHeader[1],7,'',1,0,'C',false);
+        $this->pdf->Cell($sizeHeader[2],7,'Total: ',1,0,'R',true);
+        $this->pdf->Cell($sizeHeader[3],7,number_format(array_sum($total),2,'.',' '),1,0,'R',true);
 
 
     }
@@ -156,6 +154,8 @@ class myPdf extends FPDF
     function Footer()
 {
     // Position at 1.5 cm from bottom
+    $this->SetDrawColor(0);
+    $this->Line(15, 265, 210, 265);
     $this->SetY(-15);
     // Arial italic 8
     $this->SetFont('Arial','I',8);

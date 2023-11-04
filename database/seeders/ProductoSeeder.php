@@ -15,16 +15,13 @@ class ProductoSeeder extends Seeder
      */
     public function run()
     {
-        //
-
-
-
-
         Producto::create([
             'codigo' => ' fd35r',
             'descripcion'=>'pernos',
             'precio'=>'724',
             'stock'=>'250',
+			'preciocompra'=>'27.51',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -36,6 +33,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ABRAZADERA DE UÑA 1/2 BOLSA CON 10 PZA VOLTECK',
             'precio'=>'352',
             'stock'=>'150',
+			'preciocompra'=>'73.54',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -47,6 +46,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ABRAZADERA DE UÑA 3/4 VOLTECH 10 PZS',
             'precio'=>'39',
             'stock'=>'150',
+			'preciocompra'=>'48.95',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -58,6 +59,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ABRAZADERA DE UÑA 1" VOLTECK BOLSA C/10 PZS',
             'precio'=>'914',
             'stock'=>'150',
+			'preciocompra'=>'49.46',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -69,6 +72,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ABRAZADERA NO. 4 10-16MM FIERO 10 PZS MI',
             'precio'=>'5584',
             'stock'=>'150',
+			'preciocompra'=>'57.08',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -80,6 +85,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ABRAZADERA NO. 4 3/8-5/8" REFOR BOLSA 10',
             'precio'=>'501',
             'stock'=>'150',
+			'preciocompra'=>'70.67',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -91,6 +98,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ABRAZADERA NO. 6 1/2-3/4 BOLSA 10 PZS',
             'precio'=>'5753',
             'stock'=>'150',
+			'preciocompra'=>'79.09',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -102,6 +111,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ABRAZADERA NO. 6 1/2-3/4" BOLSA C/10 PZS',
             'precio'=>'7263',
             'stock'=>'150',
+			'preciocompra'=>'49.27',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -113,6 +124,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ABRAZADERA NO. 8 5/8-7/8" BOLSA 10 PZS',
             'precio'=>'9053',
             'stock'=>'150',
+			'preciocompra'=>'60.72',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -124,6 +137,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ABRAZADERA NO.10 19-27MM FIERO 10 P AB-1',
             'precio'=>'3478',
             'stock'=>'150',
+			'preciocompra'=>'25.5',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -135,6 +150,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ABRAZADERA NO.12 5/8-1-1/4" BOLSA 10 PZS',
             'precio'=>'231',
             'stock'=>'150',
+			'preciocompra'=>'14.3',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -146,6 +163,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ABRAZADERA NO.16 19-38MM FIERO 10 PB',
             'precio'=>'72',
             'stock'=>'150',
+			'preciocompra'=>'19.53',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -157,6 +176,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ABRAZADERA NO.20 3/4- 1-3/4" BOLSA 10 PZ',
             'precio'=>'2909',
             'stock'=>'150',
+			'preciocompra'=>'5.09',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -168,6 +189,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ABRAZADERA NO.24 1-1/4-2" BOLSA 10 PZS',
             'precio'=>'2385',
             'stock'=>'150',
+			'preciocompra'=>'58.5',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -179,6 +202,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ABRAZADERA NO.28 1-1/2 - 2-1/4 BOLSA 10P',
             'precio'=>'3196',
             'stock'=>'150',
+			'preciocompra'=>'69.19',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -190,6 +215,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ABRAZADERA NO.40 57-76MM FIERO 5 PB',
             'precio'=>'8826',
             'stock'=>'150',
+			'preciocompra'=>'79.55',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -201,6 +228,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ABRAZADERA NO.52 72-95MM FIERO 5 PZSB',
             'precio'=>'4544',
             'stock'=>'150',
+			'preciocompra'=>'19.16',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -212,6 +241,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ABRAZADERA NO.72 105-127MM FIERO 5 PZS B',
             'precio'=>'6239',
             'stock'=>'150',
+			'preciocompra'=>'69.34',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -223,6 +254,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ABRAZADERA OMEGA 1/2 VOLTECK BOLSA C/10 PZA',
             'precio'=>'7563',
             'stock'=>'150',
+			'preciocompra'=>'8.43',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -234,6 +267,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ABRAZADERA OMEGA 3/4" VOLTECK C/10 PZA',
             'precio'=>'9098',
             'stock'=>'150',
+			'preciocompra'=>'20.36',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -245,6 +280,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ABRAZADERA OMEGA1" VOLTECKBOLSA CON 10 PZS',
             'precio'=>'2802',
             'stock'=>'150',
+			'preciocompra'=>'77.33',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -256,6 +293,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ABRAZADERA OMEGA 1 1/4" AKSI',
             'precio'=>'6714',
             'stock'=>'150',
+			'preciocompra'=>'66.74',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -267,6 +306,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ABRAZADERA OMEGA 1 1/4" VOLTECH 5 PZS',
             'precio'=>'5164',
             'stock'=>'150',
+			'preciocompra'=>'27.51',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -278,6 +319,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ABRAZADERA OMEGA 3" BOLSA CON 5 PZA VOLTECK',
             'precio'=>'5681',
             'stock'=>'150',
+			'preciocompra'=>'46.83',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -289,6 +332,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ABRAZADERA PARA TUBO LED T8 POLIPROPILENO',
             'precio'=>'291',
             'stock'=>'150',
+			'preciocompra'=>'54.62',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -300,6 +345,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ABSORBEDOR DE HUMEDAD 300GR KLINTEK',
             'precio'=>'7507',
             'stock'=>'150',
+			'preciocompra'=>'74.92',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -311,6 +358,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ACCESORIO P/MULTIPRO AKSI',
             'precio'=>'8804',
             'stock'=>'150',
+			'preciocompra'=>'54.98',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -322,6 +371,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ACCESORIO P/TALADRO ANGULO 90 Y 6 PUNTAS',
             'precio'=>'150',
             'stock'=>'150',
+			'preciocompra'=>'11.97',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -333,6 +384,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ACCESORIO P/TALADRO BOLSA',
             'precio'=>'1088',
             'stock'=>'150',
+			'preciocompra'=>'23.69',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -344,6 +397,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ACCESORIO P/TALADRO CARDA Y DAPTADOR',
             'precio'=>'938',
             'stock'=>'150',
+			'preciocompra'=>'63.75',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -355,6 +410,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ACCESORIO P/TALADRO DISCO C/METAL JGO',
             'precio'=>'1429',
             'stock'=>'150',
+			'preciocompra'=>'79.2',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -366,6 +423,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ACCESORIO P/TALADRO SIERRA JGO 102 MM',
             'precio'=>'4328',
             'stock'=>'150',
+			'preciocompra'=>'59.66',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -377,6 +436,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ACCESORIOS P/AIRE 14 PZS MAX TOOLS',
             'precio'=>'7355',
             'stock'=>'150',
+			'preciocompra'=>'36.13',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -388,6 +449,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ACCESORIOS P/AIRE 17 PZS LION TOOLS',
             'precio'=>'3791',
             'stock'=>'150',
+			'preciocompra'=>'37.81',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -399,6 +462,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ACCESORIOS P/AIRE 17 PZS MAX-TOOLS',
             'precio'=>'689',
             'stock'=>'150',
+			'preciocompra'=>'31.32',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -410,6 +475,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ACCESORIOS P/AIRE 17 PZS TRUPER JAN-17',
             'precio'=>'3075',
             'stock'=>'150',
+			'preciocompra'=>'19.77',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -421,6 +488,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ACCESORIOS P/AIRE 18 PZS LION TOOLS',
             'precio'=>'4705',
             'stock'=>'150',
+			'preciocompra'=>'61.96',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -432,6 +501,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ACCESORIOS P/AIRE TRUPER 2 VAL INFLA ADAPTADOR',
             'precio'=>'4303',
             'stock'=>'150',
+			'preciocompra'=>'76.91',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -443,6 +514,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ACCESORIOS P/BA¥O FOSET 5 PZS BASIC',
             'precio'=>'7396',
             'stock'=>'150',
+			'preciocompra'=>'48.49',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -454,6 +527,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ACCESORIOS P/MOTOTOOL TRUPER KIT 41 PZS*',
             'precio'=>'4075',
             'stock'=>'150',
+			'preciocompra'=>'8.81',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -465,6 +540,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ACCESORIOS PARA TALADRO DISCOS 1/8" DIAM',
             'precio'=>'8185',
             'stock'=>'150',
+			'preciocompra'=>'64.25',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -476,6 +553,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ACEITE 3 EN 1 30 MIL. CHICO *',
             'precio'=>'8698',
             'stock'=>'150',
+			'preciocompra'=>'77.06',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'1'
@@ -487,6 +566,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ACEITE 3 EN 1 90 MIL GRANDE *',
             'precio'=>'8939',
             'stock'=>'150',
+			'preciocompra'=>'69.81',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'1'
@@ -498,6 +579,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ACEITE AKSI P/MOTOR 2 TIEMPOS CHICO 120 MIL.',
             'precio'=>'8597',
             'stock'=>'150',
+			'preciocompra'=>'45.15',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'1'
@@ -509,6 +592,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ACEITE AKSI P/MOTOR 2 TIEMPOS GRANDE 475 MIL',
             'precio'=>'6171',
             'stock'=>'150',
+			'preciocompra'=>'6.83',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'1'
@@ -520,6 +605,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ACEITE LUBRICANTE MOL *',
             'precio'=>'5064',
             'stock'=>'150',
+			'preciocompra'=>'75.6',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'1'
@@ -531,6 +618,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ACEITE LUBRICANTE TRUPER 30 MIL CHICO A-31-30',
             'precio'=>'6806',
             'stock'=>'150',
+			'preciocompra'=>'57.34',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'1'
@@ -542,6 +631,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ACEITE LUBRICANTE TRUPER 90 MIL GRANDE A-31-90',
             'precio'=>'8836',
             'stock'=>'150',
+			'preciocompra'=>'41.41',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'1'
@@ -553,6 +644,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ACEITE ROJO 240 ML. *',
             'precio'=>'3764',
             'stock'=>'150',
+			'preciocompra'=>'66.97',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'1'
@@ -564,6 +657,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ACEITERA 125CC MAR-RAM FLEXIBLE',
             'precio'=>'2313',
             'stock'=>'150',
+			'preciocompra'=>'45.57',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'1'
@@ -575,6 +670,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ACEITERA 500CC MAR-RAM FLEXIBLE',
             'precio'=>'274',
             'stock'=>'150',
+			'preciocompra'=>'52.26',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'1'
@@ -586,6 +683,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ACEITERA MAR-RAM 200CC PROFESIONAL',
             'precio'=>'443',
             'stock'=>'150',
+			'preciocompra'=>'44.74',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'1'
@@ -597,6 +696,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ACEITERA MAR-RAM 300CC PROFESIONAL',
             'precio'=>'133',
             'stock'=>'150',
+			'preciocompra'=>'24.41',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'1'
@@ -608,6 +709,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ACEITERA TRUPER FLEXIBLE 180MI ACEF-180*',
             'precio'=>'3358',
             'stock'=>'150',
+			'preciocompra'=>'25.84',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'1'
@@ -619,6 +722,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ACIDO MURIATICO 1 LTS .',
             'precio'=>'2798',
             'stock'=>'150',
+			'preciocompra'=>'70.07',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'1'
@@ -630,6 +735,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ACOPLADOR COAXIAL EXTERIOR VOLTECH',
             'precio'=>'3919',
             'stock'=>'150',
+			'preciocompra'=>'66.12',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -641,6 +748,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ACOPLADOR EXTERIOR MITZU',
             'precio'=>'120',
             'stock'=>'150',
+			'preciocompra'=>'45.93',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -652,6 +761,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ADAPTADOR 3 PZS MAR-RAM',
             'precio'=>'4245',
             'stock'=>'150',
+			'preciocompra'=>'15.97',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -663,6 +774,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ADAPTADOR 3 PZS MAR-RAM IMPACTO',
             'precio'=>'7624',
             'stock'=>'150',
+			'preciocompra'=>'79.21',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -674,6 +787,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ADAPTADOR 3/4 A 1/2 MAR-RAM REDUCCION',
             'precio'=>'5384',
             'stock'=>'150',
+			'preciocompra'=>'76.8',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -685,6 +800,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ADAPTADOR FOSET 1" MACHOBOMBA POLIDUT',
             'precio'=>'4047',
             'stock'=>'150',
+			'preciocompra'=>'34.71',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -696,6 +813,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ADAPTADOR FOSET 3/4" MACHO BOMBA POLIDU',
             'precio'=>'4084',
             'stock'=>'150',
+			'preciocompra'=>'16.81',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -707,6 +826,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ADAPTADOR MAR-RAM 2 PZS 3/8A1/4 1/2A3/8',
             'precio'=>'8281',
             'stock'=>'150',
+			'preciocompra'=>'54.84',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -718,6 +839,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ADAPTADOR P/TALADRO 1/2 OBI',
             'precio'=>'9149',
             'stock'=>'150',
+			'preciocompra'=>'51.97',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -729,6 +852,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ADAPTADOR PRETUL Y P/MANGUERA AD-2P *',
             'precio'=>'906',
             'stock'=>'150',
+			'preciocompra'=>'5.86',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -740,6 +865,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ADAPTADOR TELEFONICO 1 A 2 SANELEC 4226',
             'precio'=>'7081',
             'stock'=>'150',
+			'preciocompra'=>'72.03',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -751,6 +878,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ADAPTADOR TELEFONICO 1 A 2 SANELEC GRANE',
             'precio'=>'2688',
             'stock'=>'150',
+			'preciocompra'=>'64.71',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -762,6 +891,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ADAPTADOR TELEFONICO 1 A 3 SANELEC 4223',
             'precio'=>'2197',
             'stock'=>'150',
+			'preciocompra'=>'64.67',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -773,6 +904,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ADAPTADOR TELEFONICO 1 A 3 SANELEC BLIST',
             'precio'=>'292',
             'stock'=>'150',
+			'preciocompra'=>'10.52',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -784,6 +917,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ADAPTADOR TELEFONICO 2 A 1 VOLTECH',
             'precio'=>'8009',
             'stock'=>'150',
+			'preciocompra'=>'57.46',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -795,6 +930,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ADAPTADOR TELEFONICO P/EXTEN DE 2 LINEAS',
             'precio'=>'1286',
             'stock'=>'150',
+			'preciocompra'=>'78.09',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -806,6 +943,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ADAPTADOR TELEFONICO P/EXTEN P/2 LINEAS',
             'precio'=>'2404',
             'stock'=>'150',
+			'preciocompra'=>'70.95',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -817,6 +956,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ADAPTADOR TRUPER P/2 Y MANGUERAS AD-2 AL',
             'precio'=>'8161',
             'stock'=>'150',
+			'preciocompra'=>'29.84',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -828,6 +969,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ADORNO DE DELFINES C/BASE FPD206-C',
             'precio'=>'3595',
             'stock'=>'150',
+			'preciocompra'=>'78.26',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -839,6 +982,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AEROGRAFO LION TOOLS C/ACCESORIOS',
             'precio'=>'349',
             'stock'=>'150',
+			'preciocompra'=>'42.04',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -850,6 +995,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AFILADOR DE CUCHILLOS TRUPER',
             'precio'=>'6665',
             'stock'=>'150',
+			'preciocompra'=>'25.66',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -861,6 +1008,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AFILADOR DE CUCHILLOS YNAVAJAS LION TOOLS',
             'precio'=>'2854',
             'stock'=>'150',
+			'preciocompra'=>'43.39',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -872,6 +1021,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AFINACION 4 PZS 1/2 MAR-RAM PROFESIONAL',
             'precio'=>'4277',
             'stock'=>'150',
+			'preciocompra'=>'39.35',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -883,6 +1034,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AFINACION 4 PZS FLEXIBLE MAR-RAM 1/2 MAT',
             'precio'=>'2821',
             'stock'=>'150',
+			'preciocompra'=>'12.76',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -894,6 +1047,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AFLOJATODO LUBRICANTE 110 G SANTUL 6502',
             'precio'=>'1274',
             'stock'=>'150',
+			'preciocompra'=>'17.49',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'1'
@@ -905,6 +1060,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AFLOJATODO LUBRICANTE 110 MIL TRUPERNUEVO',
             'precio'=>'7907',
             'stock'=>'150',
+			'preciocompra'=>'31.11',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'1'
@@ -916,6 +1073,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AFLOJATODO LUBRICANTE 235 G SANTUL 6503',
             'precio'=>'5713',
             'stock'=>'150',
+			'preciocompra'=>'73.73',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'1'
@@ -927,6 +1086,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AFLOJATODO LUBRICANTE 235 MIL TRUPER NUEVO',
             'precio'=>'4846',
             'stock'=>'150',
+			'preciocompra'=>'55.41',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'1'
@@ -938,6 +1099,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AFLOJATODO LUBRICANTE 400 G SANTUL 6504',
             'precio'=>'7089',
             'stock'=>'150',
+			'preciocompra'=>'62.98',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'1'
@@ -949,6 +1112,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AFLOJATODO LUBRICANTE 400 MIL TRUPER NUEVO',
             'precio'=>'907',
             'stock'=>'150',
+			'preciocompra'=>'42.15',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'1'
@@ -960,6 +1125,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AFLOJATODO WD-40 5.5 ONZAS',
             'precio'=>'3269',
             'stock'=>'150',
+			'preciocompra'=>'17.64',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'1'
@@ -971,6 +1138,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AFLOJATODO WD-40 8 ONZAS """""OJO""""',
             'precio'=>'3626',
             'stock'=>'150',
+			'preciocompra'=>'11.93',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'1'
@@ -982,6 +1151,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AIRE COMPRIMIDO AIR FLAM 514 MIL AMARILL',
             'precio'=>'832',
             'stock'=>'150',
+			'preciocompra'=>'9.47',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'1'
@@ -993,6 +1164,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALAMBRE 10 POR METRO',
             'precio'=>'722',
             'stock'=>'150',
+			'preciocompra'=>'35.39',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1004,6 +1177,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALAMBRE 8POR METRO',
             'precio'=>'8651',
             'stock'=>'150',
+			'preciocompra'=>'44.21',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1015,6 +1190,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALAMBRE DE PUAS CALI 15 ROLLO DE 100MTSA',
             'precio'=>'1088',
             'stock'=>'150',
+			'preciocompra'=>'10.08',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1026,6 +1203,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALAMBRE DE PUAS CALIBRE 15.5 360MTS AKSI',
             'precio'=>'9486',
             'stock'=>'150',
+			'preciocompra'=>'15.73',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1037,6 +1216,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALAMBRE GALVANIZADO CALIBRE 12.5 FIERO',
             'precio'=>'4167',
             'stock'=>'150',
+			'preciocompra'=>'34.29',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1048,6 +1229,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALAMBRE GALVANIZADO CALIBRE 14.5 FIERO',
             'precio'=>'2378',
             'stock'=>'150',
+			'preciocompra'=>'18.48',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1059,6 +1242,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALAMBRE GALVANIZADO CALIBRE 16 FIERO',
             'precio'=>'9386',
             'stock'=>'150',
+			'preciocompra'=>'57.15',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1070,6 +1255,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALAMBRE GALVANIZADO CALIBRE 18 FIERO',
             'precio'=>'9799',
             'stock'=>'150',
+			'preciocompra'=>'9.51',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1081,6 +1268,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALAMBRE GALVANIZADO CALIBRE 20 FIERO',
             'precio'=>'837',
             'stock'=>'150',
+			'preciocompra'=>'29.55',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1092,6 +1281,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALAMBRE GALVANIZADO CALIBRE 22 FIERO',
             'precio'=>'4786',
             'stock'=>'150',
+			'preciocompra'=>'40.19',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1103,6 +1294,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALAMBRE GALVANIZADO TLAPALERO NO.16',
             'precio'=>'1421',
             'stock'=>'150',
+			'preciocompra'=>'22.64',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1114,6 +1307,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALAMBRE GALVANIZADO TLAPALERO NO.18',
             'precio'=>'2745',
             'stock'=>'150',
+			'preciocompra'=>'64.35',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1125,6 +1320,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALAMBRE GALVANIZADO TLAPALERO NO.20',
             'precio'=>'9465',
             'stock'=>'150',
+			'preciocompra'=>'71.58',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1136,6 +1333,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALAMBRE GALVANIZADO TLAPALERO NO.22',
             'precio'=>'9087',
             'stock'=>'150',
+			'preciocompra'=>'36.03',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1147,6 +1346,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALAMBRE NO.10',
             'precio'=>'704',
             'stock'=>'150',
+			'preciocompra'=>'51.0',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1158,6 +1359,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALAMBRE NO.12',
             'precio'=>'7942',
             'stock'=>'150',
+			'preciocompra'=>'69.63',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1169,6 +1372,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALAMBRE NO.14',
             'precio'=>'8587',
             'stock'=>'150',
+			'preciocompra'=>'40.51',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1180,6 +1385,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALAMBRE NO.8',
             'precio'=>'9108',
             'stock'=>'150',
+			'preciocompra'=>'11.73',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1191,6 +1398,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALAMBRE RECOCIDO POR KILO',
             'precio'=>'978',
             'stock'=>'150',
+			'preciocompra'=>'67.54',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1202,6 +1411,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALAMBRE RECOCIDO POR ROLLO DE 20 CAL16',
             'precio'=>'1577',
             'stock'=>'150',
+			'preciocompra'=>'65.96',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1213,6 +1424,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALARMA SANTUL PUERTAS Y VENTANAS CONTRO REMOTO 460',
             'precio'=>'8543',
             'stock'=>'150',
+			'preciocompra'=>'12.14',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1224,6 +1437,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALCAYATA ROSCADA 21X80 MM 12 PZS',
             'precio'=>'7987',
             'stock'=>'150',
+			'preciocompra'=>'53.24',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1235,6 +1450,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALCAYATA ROSCADA 22X100 MM 12 PZS',
             'precio'=>'4305',
             'stock'=>'150',
+			'preciocompra'=>'26.26',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1246,6 +1463,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALCAYATA ROSCADA 22X90 MM 12 PZS',
             'precio'=>'7564',
             'stock'=>'150',
+			'preciocompra'=>'43.82',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1257,6 +1476,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALCAYATA ROSCADA 23X110 MM 12 PZS',
             'precio'=>'4905',
             'stock'=>'150',
+			'preciocompra'=>'5.19',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1268,6 +1489,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALCAYATA VARILLA 13 CTM',
             'precio'=>'1832',
             'stock'=>'150',
+			'preciocompra'=>'66.07',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1279,6 +1502,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALCAYATA VARILLA 16 CTM',
             'precio'=>'4444',
             'stock'=>'150',
+			'preciocompra'=>'78.75',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1290,6 +1515,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALCAYATA VARILLA 18 CTM',
             'precio'=>'6725',
             'stock'=>'150',
+			'preciocompra'=>'76.41',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1301,6 +1528,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALCAYATA VARILLA DE OJO CHICA 3/8',
             'precio'=>'293',
             'stock'=>'150',
+			'preciocompra'=>'47.94',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1312,6 +1541,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALCAYATA VARILLA DE OJO GRANDE',
             'precio'=>'1291',
             'stock'=>'150',
+			'preciocompra'=>'65.35',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1323,6 +1554,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALCAYATA VARILLA DE OJO MEDIANA 1/2',
             'precio'=>'5573',
             'stock'=>'150',
+			'preciocompra'=>'33.42',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1334,6 +1567,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALCOHOL EN GEL 250ML CARNU',
             'precio'=>'3995',
             'stock'=>'150',
+			'preciocompra'=>'41.25',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'1'
@@ -1345,6 +1580,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALEZNA FINA ECONOMICA *E014',
             'precio'=>'3256',
             'stock'=>'150',
+			'preciocompra'=>'8.41',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'1'
@@ -1356,6 +1593,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ALMOHADILLA NORTON VERDE MUY FINO 152X22',
             'precio'=>'4296',
             'stock'=>'150',
+			'preciocompra'=>'30.1',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1367,6 +1606,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AMARRADOR DE VARILLA',
             'precio'=>'171',
             'stock'=>'150',
+			'preciocompra'=>'47.8',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1378,6 +1619,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AMARRADOR REDONDO',
             'precio'=>'5664',
             'stock'=>'150',
+			'preciocompra'=>'28.29',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1389,6 +1632,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ANTENA C/B C/2 ARI COAX MITZ02-2007',
             'precio'=>'3191',
             'stock'=>'150',
+			'preciocompra'=>'15.41',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1400,6 +1645,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ANTENA INTERIOR PLANA HDTV 21" SURTEK',
             'precio'=>'896',
             'stock'=>'150',
+			'preciocompra'=>'16.26',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1411,6 +1658,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ANTENA MAGA¥A A-A13 ALPHA',
             'precio'=>'523',
             'stock'=>'150',
+			'preciocompra'=>'10.87',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1422,6 +1671,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ANTENA MAGA¥A A-A14 OMEGA ALETA CURVA',
             'precio'=>'9267',
             'stock'=>'150',
+			'preciocompra'=>'7.9',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1433,6 +1684,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ANTENA MAGA¥A A-ORO DURA ORO',
             'precio'=>'647',
             'stock'=>'150',
+			'preciocompra'=>'6.3',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1444,6 +1697,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ANTENA MAGA¥A A-UV14-MX 28 ELEMENTOS',
             'precio'=>'5434',
             'stock'=>'150',
+			'preciocompra'=>'47.88',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1455,6 +1710,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ANTENA SANELEC GIRATORIA CLASICA CONTROL',
             'precio'=>'523',
             'stock'=>'150',
+			'preciocompra'=>'6.46',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1466,6 +1723,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ANTENA SANELEC HD TV INTERIOR 12" NEGRA',
             'precio'=>'9849',
             'stock'=>'150',
+			'preciocompra'=>'11.34',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1477,6 +1736,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ANTENA SANELEC PLANA MINI ULTRA DELGADA',
             'precio'=>'3553',
             'stock'=>'150',
+			'preciocompra'=>'69.51',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1488,6 +1749,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ANTENA T/PANA FUSSION C/COAXIAL Y PLANO',
             'precio'=>'8219',
             'stock'=>'150',
+			'preciocompra'=>'49.78',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1499,6 +1762,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ANTENA T/PANA FUSSION C/PLANO',
             'precio'=>'434',
             'stock'=>'150',
+			'preciocompra'=>'49.21',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1510,6 +1775,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ANTENA TIPO T LUMIHDIML3MTS DE CABLE POLIETILE',
             'precio'=>'7513',
             'stock'=>'150',
+			'preciocompra'=>'31.27',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1521,6 +1788,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ANTENA TIPO T PVC LUMIHD CHICA C/ABLE',
             'precio'=>'6264',
             'stock'=>'150',
+			'preciocompra'=>'9.29',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1532,6 +1801,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ANTENA TIPO T PVC LUMIHD GRANDE C/CABLE',
             'precio'=>'8783',
             'stock'=>'150',
+			'preciocompra'=>'51.53',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1543,6 +1814,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ANTORCHA RUSTICA SANTUL BAMBU 7582',
             'precio'=>'512',
             'stock'=>'150',
+			'preciocompra'=>'18.44',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1554,6 +1827,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'APAGADOR COLA DE RATA VOLTECH',
             'precio'=>'9251',
             'stock'=>'150',
+			'preciocompra'=>'67.52',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1565,6 +1840,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'APAGADOR CON CONTACTO VOLTECK',
             'precio'=>'895',
             'stock'=>'150',
+			'preciocompra'=>'5.62',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1576,6 +1853,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'APAGADOR DE PASO AKSI',
             'precio'=>'6723',
             'stock'=>'150',
+			'preciocompra'=>'37.05',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1587,6 +1866,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'APAGADOR DE PASO ROYER 227',
             'precio'=>'93',
             'stock'=>'150',
+			'preciocompra'=>'57.03',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1598,6 +1879,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'APAGADOR DE PASO SANELEC',
             'precio'=>'4479',
             'stock'=>'150',
+			'preciocompra'=>'42.22',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1609,6 +1892,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'APAGADOR ESCALERA MODUS 10A *',
             'precio'=>'9606',
             'stock'=>'150',
+			'preciocompra'=>'44.15',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1620,6 +1905,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'APAGADOR ESCALERA QUINZI¥O *',
             'precio'=>'4592',
             'stock'=>'150',
+			'preciocompra'=>'70.47',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1631,6 +1918,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'APAGADOR ESCALERA ROYER 3223 *',
             'precio'=>'4144',
             'stock'=>'150',
+			'preciocompra'=>'22.4',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1642,6 +1931,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'APAGADOR ESCALERA SAMY',
             'precio'=>'6944',
             'stock'=>'150',
+			'preciocompra'=>'13.11',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1653,6 +1944,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'APAGADOR PUSH SURTEK',
             'precio'=>'2287',
             'stock'=>'150',
+			'preciocompra'=>'11.29',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1664,6 +1957,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'APAGADOR ROYER VIS.CUAD.222 *',
             'precio'=>'605',
             'stock'=>'150',
+			'preciocompra'=>'72.8',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1675,6 +1970,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'APAGADOR ROYER VIS.RED.221 *',
             'precio'=>'6162',
             'stock'=>'150',
+			'preciocompra'=>'46.23',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1686,6 +1983,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'APAGADOR SENCILLO BTICINO *',
             'precio'=>'8996',
             'stock'=>'150',
+			'preciocompra'=>'19.72',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1697,6 +1996,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'APAGADOR SENCILLO BTICINO MODUS *',
             'precio'=>'6496',
             'stock'=>'150',
+			'preciocompra'=>'36.69',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1708,6 +2009,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'APAGADOR SENCILLO ROYER 3222 *',
             'precio'=>'5488',
             'stock'=>'150',
+			'preciocompra'=>'43.77',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1719,6 +2022,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'APAGADOR SENCILLO SAMY',
             'precio'=>'7955',
             'stock'=>'150',
+			'preciocompra'=>'73.58',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1730,6 +2035,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'APAGADOR VISIBLE OVALADO SANELEC 4314',
             'precio'=>'331',
             'stock'=>'150',
+			'preciocompra'=>'36.33',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1741,6 +2048,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'APAGADOR VISIBLE PLANO AKSI',
             'precio'=>'2683',
             'stock'=>'150',
+			'preciocompra'=>'9.09',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1752,6 +2061,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'APAGADOR VISIBLE VOLTECH APSO-S',
             'precio'=>'3488',
             'stock'=>'150',
+			'preciocompra'=>'17.36',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -1763,6 +2074,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARBOL P/REGADERA CON TORNILLO',
             'precio'=>'9389',
             'stock'=>'150',
+			'preciocompra'=>'11.74',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -1774,6 +2087,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARCO P/CALAR 5 SEGUETAS RAM-TOOLS',
             'precio'=>'648',
             'stock'=>'150',
+			'preciocompra'=>'54.52',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -1785,6 +2100,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARCO P/CALAR MADERA NO.2 TUBULAR',
             'precio'=>'4234',
             'stock'=>'150',
+			'preciocompra'=>'16.66',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -1796,6 +2113,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARCO P/CALAR MADERA NO.3 TUBULAR',
             'precio'=>'1732',
             'stock'=>'150',
+			'preciocompra'=>'69.2',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -1807,6 +2126,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARCO P/SEGUETA MAR-RAM CUADRADO M/AMARIL',
             'precio'=>'5956',
             'stock'=>'150',
+			'preciocompra'=>'41.5',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -1818,6 +2139,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARCO P/SEGUETA MAX-TOOLS CROMADO',
             'precio'=>'4585',
             'stock'=>'150',
+			'preciocompra'=>'32.03',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -1829,6 +2152,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARCO P/SEGUETA MAX-TOOLS SOLERA',
             'precio'=>'5058',
             'stock'=>'150',
+			'preciocompra'=>'74.25',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -1840,6 +2165,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARCO P/SEGUETA MINI ECONOMICO *',
             'precio'=>'1533',
             'stock'=>'150',
+			'preciocompra'=>'78.57',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -1851,6 +2178,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARCO P/SEGUETA PRETUL SOLERA 12" A*',
             'precio'=>'2492',
             'stock'=>'150',
+			'preciocompra'=>'8.24',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -1862,6 +2191,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARCO P/SEGUETA SANTUL 7032 ALTA TENSION',
             'precio'=>'7862',
             'stock'=>'150',
+			'preciocompra'=>'52.13',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -1873,6 +2204,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARCO P/SEGUETA SOLERA 1/2X1"',
             'precio'=>'1835',
             'stock'=>'150',
+			'preciocompra'=>'49.56',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -1884,6 +2217,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARCO P/SEGUETA SOLERA 1/4X1GRIS',
             'precio'=>'5587',
             'stock'=>'150',
+			'preciocompra'=>'6.7',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -1895,6 +2230,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARCO P/SEGUETA SOLERA 1/4X1"',
             'precio'=>'2429',
             'stock'=>'150',
+			'preciocompra'=>'10.88',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -1906,6 +2243,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARCO P/SEGUETA SOLERA 3/8X1"',
             'precio'=>'5385',
             'stock'=>'150',
+			'preciocompra'=>'77.14',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -1917,6 +2256,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARCO P/SEGUETA TRUPER TENS 12" P ATX12 *',
             'precio'=>'9639',
             'stock'=>'150',
+			'preciocompra'=>'69.26',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -1928,6 +2269,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARCO P/SEGUETA TRUPER TUBULAR 12" ATT12*',
             'precio'=>'204',
             'stock'=>'150',
+			'preciocompra'=>'37.81',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -1939,6 +2282,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARMAZON METALICO PARA RODILLO TRUPER',
             'precio'=>'1282',
             'stock'=>'150',
+			'preciocompra'=>'38.59',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'1'
@@ -1950,6 +2295,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARMELLA ABIERTA 17X40 24 PZS FIERO',
             'precio'=>'289',
             'stock'=>'150',
+			'preciocompra'=>'76.74',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1961,6 +2308,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARMELLA ABIERTA 18X50 18 PZS FIERO',
             'precio'=>'7598',
             'stock'=>'150',
+			'preciocompra'=>'47.07',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1972,6 +2321,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARMELLA ABIERTA 19X60 18 PZS FIERO',
             'precio'=>'7125',
             'stock'=>'150',
+			'preciocompra'=>'40.36',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1983,6 +2334,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARMELLA ABIERTA 20X70 24 PZS FIERO',
             'precio'=>'283',
             'stock'=>'150',
+			'preciocompra'=>'21.34',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -1994,6 +2347,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARMELLA ABIERTA 21X80 12 PZS FIERO',
             'precio'=>'2775',
             'stock'=>'150',
+			'preciocompra'=>'67.06',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -2005,6 +2360,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARMELLA ABIERTA 22X100 12 PZS FIERO',
             'precio'=>'5386',
             'stock'=>'150',
+			'preciocompra'=>'61.37',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -2016,6 +2373,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARMELLA ABIERTA 23X110 12 PZS FIERO',
             'precio'=>'8605',
             'stock'=>'150',
+			'preciocompra'=>'20.74',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -2027,6 +2386,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARMELLA CERRADA 17X40 18 PZS FIERO',
             'precio'=>'6866',
             'stock'=>'150',
+			'preciocompra'=>'57.42',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -2038,6 +2399,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARMELLA CERRADA 18X50 18 PZS FIERO',
             'precio'=>'8516',
             'stock'=>'150',
+			'preciocompra'=>'42.03',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -2049,6 +2412,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARMELLA CERRADA 19X60 18 PZS FIERO',
             'precio'=>'1982',
             'stock'=>'150',
+			'preciocompra'=>'40.57',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -2060,6 +2425,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARMELLA CERRADA 20X70 18 PZS FIERO',
             'precio'=>'436',
             'stock'=>'150',
+			'preciocompra'=>'30.98',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -2071,6 +2438,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARMELLA CERRADA 21X80 12 PZS FIERO',
             'precio'=>'5856',
             'stock'=>'150',
+			'preciocompra'=>'41.39',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -2082,6 +2451,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARMELLA CERRADA 22X80 12 PZS FIERO',
             'precio'=>'6199',
             'stock'=>'150',
+			'preciocompra'=>'65.75',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -2093,6 +2464,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARMELLA CERRADA 23X110 12 PZS FIERO',
             'precio'=>'3426',
             'stock'=>'150',
+			'preciocompra'=>'9.06',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -2104,6 +2477,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARNES SURTEK P/RESCATE UNITALLA',
             'precio'=>'8535',
             'stock'=>'150',
+			'preciocompra'=>'74.72',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -2115,6 +2490,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARNES TRUPER 3 ANILLOS Y POSICI ARN5436¨',
             'precio'=>'2397',
             'stock'=>'150',
+			'preciocompra'=>'62.09',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -2126,6 +2503,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARNES TRUPER CUERPO COMPLE 1 ANIARN5435¨',
             'precio'=>'6381',
             'stock'=>'150',
+			'preciocompra'=>'11.92',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -2137,6 +2516,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARNES TRUPER CUERPO COMPLETO 5 ANILLOS P',
             'precio'=>'4714',
             'stock'=>'150',
+			'preciocompra'=>'20.2',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -2148,6 +2529,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ARNES TRUPER CUERPO COMPLETO ARN-5437',
             'precio'=>'4427',
             'stock'=>'150',
+			'preciocompra'=>'32.92',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -2159,6 +2542,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ASIENTO PARA WC 35 CM BLANCO FOSET',
             'precio'=>'7993',
             'stock'=>'150',
+			'preciocompra'=>'74.73',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -2170,6 +2555,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ASIENTO PARA WC 40 CM BLANCO FOSET',
             'precio'=>'6685',
             'stock'=>'150',
+			'preciocompra'=>'33.57',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -2181,6 +2568,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ASPERSOR GRIRATORIO MAR-RAM',
             'precio'=>'9445',
             'stock'=>'150',
+			'preciocompra'=>'6.4',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -2192,6 +2581,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ASPERSOR SANTUL C/ESTACA METAL 7533 *',
             'precio'=>'717',
             'stock'=>'150',
+			'preciocompra'=>'10.38',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -2203,6 +2594,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ASPERSOR SANTUL C/ESTACA PLASTICO 7532 *',
             'precio'=>'7515',
             'stock'=>'150',
+			'preciocompra'=>'69.48',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -2214,6 +2607,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ASPERSOR SANTUL CON ESTACA 9 FUNCIO 753*',
             'precio'=>'6067',
             'stock'=>'150',
+			'preciocompra'=>'78.86',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -2225,6 +2620,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ASPERSOR SANTUL METALICO P/RIEGO 7530*',
             'precio'=>'7789',
             'stock'=>'150',
+			'preciocompra'=>'36.99',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -2236,6 +2633,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ASPIRADORA FILTRO DE ESPUMA PA ASP1-03',
             'precio'=>'742',
             'stock'=>'150',
+			'preciocompra'=>'70.22',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -2247,6 +2646,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ASPIRADORA PRETUL P/AUTO 12 VOLS',
             'precio'=>'343',
             'stock'=>'150',
+			'preciocompra'=>'40.41',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -2258,6 +2659,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ASPIRADORA TRUPER 3 GALONES ASPI-03',
             'precio'=>'9489',
             'stock'=>'150',
+			'preciocompra'=>'77.74',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -2269,6 +2672,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ASPIRADORA TRUPER 6 GALONES ASPI-06',
             'precio'=>'6415',
             'stock'=>'150',
+			'preciocompra'=>'20.65',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -2280,6 +2685,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ATOMIZADOR AKSI 1 LTS.',
             'precio'=>'3607',
             'stock'=>'150',
+			'preciocompra'=>'32.2',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -2291,6 +2698,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ATOMIZADOR AKSI DE 500 MIL.',
             'precio'=>'8791',
             'stock'=>'150',
+			'preciocompra'=>'48.98',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -2302,6 +2711,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ATOMIZADOR SANTUL SPRAY 17 8801',
             'precio'=>'3136',
             'stock'=>'150',
+			'preciocompra'=>'20.03',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -2313,6 +2724,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'ATOMIZADOR SPRAY SANTUL 900 MIL 8800',
             'precio'=>'9304',
             'stock'=>'150',
+			'preciocompra'=>'6.08',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -2324,6 +2737,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AUDIFONO MITZU 3.5 DIADEMA T-BEATS BLANCO',
             'precio'=>'7114',
             'stock'=>'150',
+			'preciocompra'=>'28.19',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -2335,6 +2750,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AUDIFONO MITZU BLUETOOTH V2 1+EDR 10M/MANOS LIBRES',
             'precio'=>'7659',
             'stock'=>'150',
+			'preciocompra'=>'10.03',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -2346,6 +2763,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AUTOCLER 135 PZS TRUPER 1/4-3/8-1/2 ¨¨',
             'precio'=>'6952',
             'stock'=>'150',
+			'preciocompra'=>'9.65',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -2357,6 +2776,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AUTOCLER 15 PZS MAR-RAM ENT 3/4 ASTRIADO',
             'precio'=>'1784',
             'stock'=>'150',
+			'preciocompra'=>'49.16',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -2368,6 +2789,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AUTOCLER 15 PZS MAR-RAM ENTRADA DE 3/4',
             'precio'=>'8064',
             'stock'=>'150',
+			'preciocompra'=>'51.61',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -2379,6 +2802,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AUTOCLER 16 PZS MAR-RAM PROF MILIMETRICO',
             'precio'=>'4968',
             'stock'=>'150',
+			'preciocompra'=>'52.54',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -2390,6 +2815,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AUTOCLER 17 PZS 1/4" MAR-RAM MM.ROJO',
             'precio'=>'649',
             'stock'=>'150',
+			'preciocompra'=>'25.11',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -2401,6 +2828,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AUTOCLER 17 PZS 1/4" MAR-RAM STD AZUL',
             'precio'=>'8341',
             'stock'=>'150',
+			'preciocompra'=>'13.16',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -2412,6 +2841,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AUTOCLER 21 PZS MAR-RAM ENTRADA DE 3/4"',
             'precio'=>'9756',
             'stock'=>'150',
+			'preciocompra'=>'46.19',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -2423,6 +2854,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AUTOCLER 25 PZS MAR-RAM PROF HOGAR/ CHIC',
             'precio'=>'3757',
             'stock'=>'150',
+			'preciocompra'=>'21.41',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -2434,6 +2867,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AUTOCLER 25 PZS MAR-RAM PROFE USO TALLER',
             'precio'=>'9517',
             'stock'=>'150',
+			'preciocompra'=>'28.65',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -2445,6 +2880,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AUTOCLER 25 PZS MAR-RAM SK25',
             'precio'=>'6313',
             'stock'=>'150',
+			'preciocompra'=>'36.67',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -2456,6 +2893,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AUTOCLER 40 PZS MAR-RAM 1/4"',
             'precio'=>'30',
             'stock'=>'15',
+			'preciocompra'=>'54.84',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -2467,6 +2906,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AUTOCLER 52 PZS MAR-RAM PROFESINAL',
             'precio'=>'6138',
             'stock'=>'150',
+			'preciocompra'=>'8.82',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -2478,6 +2919,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AUTOCLER 75 PZS MAR-RAM 1/4',
             'precio'=>'15',
             'stock'=>'15',
+			'preciocompra'=>'48.8',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -2489,6 +2932,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AVELLANADOR 7 PZS RAM-TOOLS',
             'precio'=>'981',
             'stock'=>'150',
+			'preciocompra'=>'43.78',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -2500,6 +2945,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AVELLANADOR AKSI CON DOBLE MARIPOSA 3',
             'precio'=>'4114',
             'stock'=>'150',
+			'preciocompra'=>'55.5',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -2511,6 +2958,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AVELLANADOR TRUPER DE TUB 3/16-5/8 JAV-7',
             'precio'=>'114',
             'stock'=>'150',
+			'preciocompra'=>'57.95',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'2'
@@ -2522,6 +2971,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AZADON P/NIÑOS TRUPER MANGO 42"ATJ-KID',
             'precio'=>'3358',
             'stock'=>'150',
+			'preciocompra'=>'76.68',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2533,6 +2984,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AZADON TRUPER AL-1 NO.1 FORJADO SIN MAN*',
             'precio'=>'3369',
             'stock'=>'150',
+			'preciocompra'=>'45.55',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2544,6 +2997,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AZADON TRUPER AL-2 NO.2 FORJADO SIN MAN*',
             'precio'=>'6773',
             'stock'=>'150',
+			'preciocompra'=>'66.15',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2555,6 +3010,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AZADON TRUPER AL-3 NO.3 FORJADO SIN MAN*',
             'precio'=>'3757',
             'stock'=>'150',
+			'preciocompra'=>'23.31',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2566,6 +3023,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'AZADON TRUPER LANE C/MANGO NO.3 1.8 AL-3',
             'precio'=>'8466',
             'stock'=>'150',
+			'preciocompra'=>'64.14',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2577,6 +3036,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BAFLE AMPLIFICADO 15" DONKER RECARG KIT',
             'precio'=>'1058',
             'stock'=>'150',
+			'preciocompra'=>'69.28',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2588,6 +3049,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BAFLE AMPLIFICADO 15" KAISER RECARGABLE KIT',
             'precio'=>'9893',
             'stock'=>'150',
+			'preciocompra'=>'68.22',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2599,6 +3062,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BAFLE DONKER 15" RECARGABLE BLUETOOTH LUZ LED',
             'precio'=>'6291',
             'stock'=>'150',
+			'preciocompra'=>'40.46',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2610,6 +3075,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BAFLE MITZU 15" RECARGABLE AMPLI BLUETOOTH',
             'precio'=>'1776',
             'stock'=>'150',
+			'preciocompra'=>'25.56',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2621,6 +3088,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BAFLE MITZU 8" RECARGABLE AMPLIFICADO BLUETOOTH',
             'precio'=>'7',
             'stock'=>'150',
+			'preciocompra'=>'12.41',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2632,6 +3101,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BALASTRA LUMICON 2X39 127V.T12 SLIM-LINE',
             'precio'=>'4708',
             'stock'=>'150',
+			'preciocompra'=>'9.88',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2643,6 +3114,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BALERO P/CARRETILLA JGO 2 PZS',
             'precio'=>'3518',
             'stock'=>'150',
+			'preciocompra'=>'65.94',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2654,6 +3127,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BANDERIN ANARANJADO MALLA C/REFLEJANTE T',
             'precio'=>'3465',
             'stock'=>'150',
+			'preciocompra'=>'69.34',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2665,6 +3140,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BANDOLA CON DESTORCEDOR MAR-RAM 1PZ 5/8"',
             'precio'=>'6772',
             'stock'=>'150',
+			'preciocompra'=>'13.09',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2676,6 +3153,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BANDOLA DE ALUMINIO 2 PZS 7MM BR COLORES',
             'precio'=>'3463',
             'stock'=>'150',
+			'preciocompra'=>'45.73',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2687,6 +3166,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BANDOLA GIRA C/DESTOR OVAL 3/8 10 PZS',
             'precio'=>'7002',
             'stock'=>'150',
+			'preciocompra'=>'67.96',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2698,6 +3179,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BANDOLA GIRATORIA CIERRE RAPIDO 1" GANCHO FIJO',
             'precio'=>'462',
             'stock'=>'150',
+			'preciocompra'=>'44.18',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2709,6 +3192,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BANDOLA GIRATORIA DESTORCEDOR 1"',
             'precio'=>'2094',
             'stock'=>'150',
+			'preciocompra'=>'33.8',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2720,6 +3205,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BANDOLA MOSQUETON RECTA 12 CM',
             'precio'=>'661',
             'stock'=>'150',
+			'preciocompra'=>'52.62',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2731,6 +3218,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BANDOLA MOSQUETON RECTA 8 CM',
             'precio'=>'677',
             'stock'=>'150',
+			'preciocompra'=>'33.7',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2742,6 +3231,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BANDOLA SANTUL 2" LARGO 51 MM 7778',
             'precio'=>'4018',
             'stock'=>'150',
+			'preciocompra'=>'49.43',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2753,6 +3244,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BANDOLA SANTUL 3 1/2" LA 89 MM 7780*',
             'precio'=>'9782',
             'stock'=>'150',
+			'preciocompra'=>'51.02',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2764,6 +3257,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BANDOLA SANTUL 3" LARGO 76 MM 7779 *',
             'precio'=>'6853',
             'stock'=>'150',
+			'preciocompra'=>'24.27',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2775,6 +3270,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BANDOLA SANTUL 4 1/2" LA 108 MM 7782*',
             'precio'=>'4921',
             'stock'=>'150',
+			'preciocompra'=>'76.31',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2786,6 +3283,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BANDOLA SANTUL 4" LARGO 102 MM 7781 *',
             'precio'=>'4044',
             'stock'=>'150',
+			'preciocompra'=>'9.55',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2797,6 +3296,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BANDOLA TIPO PERA ALUMINIO 8X80MM C/SEGURO MAR-RAM',
             'precio'=>'5458',
             'stock'=>'150',
+			'preciocompra'=>'35.6',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2808,6 +3309,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BANDOLA TIPO PERA NO. 6X60MM C/SEGURO MAR-RAM',
             'precio'=>'5159',
             'stock'=>'150',
+			'preciocompra'=>'58.53',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2819,6 +3322,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BANDOLA TIPO PERA NO. 6X60MM MAR-RAM',
             'precio'=>'9419',
             'stock'=>'150',
+			'preciocompra'=>'19.82',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2830,6 +3335,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BANDOLA TIPO PERA NO. 7X70MM C/SEGURO MAR-RAM',
             'precio'=>'1619',
             'stock'=>'150',
+			'preciocompra'=>'14.89',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2841,6 +3348,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BANDOLA TIPO PERA NO. 7X70MM MAR-RAM',
             'precio'=>'984',
             'stock'=>'150',
+			'preciocompra'=>'65.13',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2852,6 +3361,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BANDOLA TIPO PERA NO. 8X80MM C/SEGURO MAR-RAM',
             'precio'=>'4341',
             'stock'=>'150',
+			'preciocompra'=>'66.25',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2863,6 +3374,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BANDOLA TIPO PERA NO. 8X80MM MAR-RAM',
             'precio'=>'2185',
             'stock'=>'150',
+			'preciocompra'=>'77.46',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2874,6 +3387,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BANDOLA TIPO PERA NO. 9X90MM C/SEGURO MAR-RAM',
             'precio'=>'7903',
             'stock'=>'150',
+			'preciocompra'=>'22.73',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2885,6 +3400,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BANDOLA TIPO PERA NO. 9X90MM MAR-RAM',
             'precio'=>'2961',
             'stock'=>'150',
+			'preciocompra'=>'10.37',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2896,6 +3413,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BANDOLA TIPO PERA NO.10X100MM C/SEGURO MAR-RAM',
             'precio'=>'1095',
             'stock'=>'150',
+			'preciocompra'=>'10.48',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2907,6 +3426,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BANDOLA TIPO PERA NO.12X140MM C/SEGURO MAR-RAM',
             'precio'=>'659',
             'stock'=>'150',
+			'preciocompra'=>'31.36',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2918,6 +3439,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BANDOLA TIPO TRIANGULO 5 MM DELTA C/TU',
             'precio'=>'9666',
             'stock'=>'150',
+			'preciocompra'=>'58.46',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2929,6 +3452,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BARBOQUEJO CON BARBILLA PARA CASCO TRUPER DE SEGUR',
             'precio'=>'8559',
             'stock'=>'150',
+			'preciocompra'=>'78.97',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2940,6 +3465,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BARBOQUEJO SURTEK SIN BARBILLA',
             'precio'=>'3799',
             'stock'=>'150',
+			'preciocompra'=>'36.87',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2951,6 +3478,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BARRETA DE U¥A TRUPER 3/4X75CTM BU-75',
             'precio'=>'3316',
             'stock'=>'150',
+			'preciocompra'=>'19.68',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2962,6 +3491,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BARRETA TRUPER 1" X 1.75MTS BAP-175',
             'precio'=>'5184',
             'stock'=>'150',
+			'preciocompra'=>'46.3',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2973,6 +3504,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BARRETA TRUPER 1"X1.50 MTS BAP-150',
             'precio'=>'597',
             'stock'=>'150',
+			'preciocompra'=>'70.7',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2984,6 +3517,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BARRETA TRUPER 7/8"X100 CM',
             'precio'=>'430',
             'stock'=>'150',
+			'preciocompra'=>'29.27',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -2995,6 +3530,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BARRETA TRUPER 7/8"X125CM',
             'precio'=>'359',
             'stock'=>'150',
+			'preciocompra'=>'56.87',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -3006,6 +3543,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BASCULA DE BA¥O HASTA 180 KG VOLTECH',
             'precio'=>'5048',
             'stock'=>'150',
+			'preciocompra'=>'25.65',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -3017,6 +3556,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BASCULA DE VIAJE MALETERA 25 KG OBI DIGI',
             'precio'=>'4472',
             'stock'=>'150',
+			'preciocompra'=>'45.57',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -3028,6 +3569,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BASCULA DIGITAL SANTUL 5 KILOS',
             'precio'=>'7216',
             'stock'=>'150',
+			'preciocompra'=>'63.63',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -3039,6 +3582,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BASCULA MULTISUSOS OBI 2KG/0.1G DIGITAL',
             'precio'=>'2662',
             'stock'=>'150',
+			'preciocompra'=>'44.47',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -3050,6 +3595,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BASCULA ROMANA PRETUL 25 KG',
             'precio'=>'1663',
             'stock'=>'150',
+			'preciocompra'=>'29.67',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -3061,6 +3608,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BASCULA TRUPER COLGANTE DE 10 KG.',
             'precio'=>'327',
             'stock'=>'150',
+			'preciocompra'=>'27.28',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -3072,6 +3621,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BASCULA TRUPER DIGITAL BASE DE VIDRIO 5 KG',
             'precio'=>'6648',
             'stock'=>'150',
+			'preciocompra'=>'16.7',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -3083,6 +3634,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BASCULA TRUPER MECANICA C/CUCHARON 2 KIL',
             'precio'=>'2257',
             'stock'=>'150',
+			'preciocompra'=>'69.83',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -3094,6 +3647,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BASCULA TRUPER MECANICA C/CUCHARON 5 KIL',
             'precio'=>'1341',
             'stock'=>'150',
+			'preciocompra'=>'79.36',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -3105,6 +3660,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BASE P/CAUTIN DE LAPIZ TRUPER C/ESPONJA',
             'precio'=>'9935',
             'stock'=>'150',
+			'preciocompra'=>'68.05',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -3116,6 +3673,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BASE P/MEDIDOR IUSA 4 TERMINALES 5875',
             'precio'=>'565',
             'stock'=>'150',
+			'preciocompra'=>'64.38',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -3127,6 +3686,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BASE P/MEDIDOR VOLTECH',
             'precio'=>'8445',
             'stock'=>'150',
+			'preciocompra'=>'78.31',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -3138,6 +3699,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BASE PORTALAMPARA BI PIN G13 AKSI',
             'precio'=>'5276',
             'stock'=>'150',
+			'preciocompra'=>'20.56',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -3149,6 +3712,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BASE PORTALAMPARA BIPIN VOLTECH POPL-15',
             'precio'=>'1046',
             'stock'=>'150',
+			'preciocompra'=>'37.34',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -3160,6 +3725,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BASE SANELECP/FOCO MR-16 FIJA CROMO',
             'precio'=>'9403',
             'stock'=>'150',
+			'preciocompra'=>'36.38',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -3171,6 +3738,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BASE SANELEC P/FOCO MR-16 DIRIGIBLE BLANCA',
             'precio'=>'3876',
             'stock'=>'150',
+			'preciocompra'=>'19.73',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -3182,6 +3751,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BASE SANELEC P/FOCO MR-16 FIJA BLANCA',
             'precio'=>'117',
             'stock'=>'150',
+			'preciocompra'=>'39.49',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -3193,6 +3764,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BASE SANELEC P/FOCO MR-16 MOBIBLE PLATA',
             'precio'=>'4225',
             'stock'=>'150',
+			'preciocompra'=>'43.93',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -3204,6 +3777,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BASE SLIM LINE VOLTECH POPL-14',
             'precio'=>'7612',
             'stock'=>'150',
+			'preciocompra'=>'77.07',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -3215,6 +3790,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BATERIA MITZU 2500 MA ULTRA PLANA UNIVER',
             'precio'=>'5384',
             'stock'=>'150',
+			'preciocompra'=>'36.66',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -3226,6 +3803,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BERBIQUI ECONOMICO #12',
             'precio'=>'4087',
             'stock'=>'150',
+			'preciocompra'=>'70.78',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -3237,6 +3816,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BIELDO TRUPER 4 DIENTES JARDIN FIBRA 30"',
             'precio'=>'428',
             'stock'=>'150',
+			'preciocompra'=>'54.37',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -3248,6 +3829,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BIELDO TRUPER FORJADO 4 D C/M 50"BPJ-4',
             'precio'=>'9142',
             'stock'=>'150',
+			'preciocompra'=>'54.56',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -3259,6 +3842,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BIELDO TRUPER JARDIN T2000 4D C/M BJ-4P',
             'precio'=>'2867',
             'stock'=>'150',
+			'preciocompra'=>'20.22',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -3270,6 +3855,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BIELDO TRUPER PARA PAJA 6 DIENTES 54" MA',
             'precio'=>'6911',
             'stock'=>'150',
+			'preciocompra'=>'70.05',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -3281,6 +3868,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BIRLO GALVANIZADO 1/4X4" P/LAMINAS',
             'precio'=>'5952',
             'stock'=>'150',
+			'preciocompra'=>'60.29',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -3292,6 +3881,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BIRLO GALVANIZADO 3/16X4 P/LAMINA PZ',
             'precio'=>'9027',
             'stock'=>'150',
+			'preciocompra'=>'64.65',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -3303,6 +3894,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BIRLO GALVANIZADO 3/16X5 P/LAMINA PZS',
             'precio'=>'7281',
             'stock'=>'150',
+			'preciocompra'=>'17.16',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'6'
@@ -3314,6 +3907,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BISAGRA 3X3" HERMEX BASIC LATONADA C/AMA',
             'precio'=>'9322',
             'stock'=>'150',
+			'preciocompra'=>'53.97',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -3325,6 +3920,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BISAGRA 3X3" HERMEX LATONADA P/PLANA',
             'precio'=>'4768',
             'stock'=>'150',
+			'preciocompra'=>'54.01',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -3336,6 +3933,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BISAGRA 3X3" HERMEX LATONADA P/REDONDO',
             'precio'=>'5872',
             'stock'=>'150',
+			'preciocompra'=>'7.1',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -3347,6 +3946,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BISAGRA HERMEX 3" MATE PLANA',
             'precio'=>'5057',
             'stock'=>'150',
+			'preciocompra'=>'29.72',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -3358,6 +3959,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BISAGRA HERMEX 4" ACERO LATONADO PLANA',
             'precio'=>'7668',
             'stock'=>'150',
+			'preciocompra'=>'15.07',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -3369,6 +3972,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BISAGRA HERMEX LATONADA 1 1/2"X1 3/16"',
             'precio'=>'3172',
             'stock'=>'150',
+			'preciocompra'=>'13.88',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -3380,6 +3985,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BISAGRA HERMEX LATONADA 1"X7/8"',
             'precio'=>'2852',
             'stock'=>'150',
+			'preciocompra'=>'50.11',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -3391,6 +3998,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BISAGRA HERMEX LATONADA 2 1/2"X1 5/8"',
             'precio'=>'4747',
             'stock'=>'150',
+			'preciocompra'=>'52.34',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -3402,6 +4011,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BISAGRA HERMEX LATONADA 2"X 1 1/2"',
             'precio'=>'5179',
             'stock'=>'150',
+			'preciocompra'=>'59.28',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -3413,6 +4024,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BISAGRA HERMEX LATONADA 3 1/2"X 2 1/8"',
             'precio'=>'1654',
             'stock'=>'150',
+			'preciocompra'=>'53.67',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -3424,6 +4037,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BISAGRA HERMEX LATONADA 3"X 1 15/16"',
             'precio'=>'2732',
             'stock'=>'150',
+			'preciocompra'=>'16.2',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -3435,6 +4050,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BISAGRA HERMEX LATONADA 4"X 2 3/4"',
             'precio'=>'870',
             'stock'=>'150',
+			'preciocompra'=>'35.54',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -3446,6 +4063,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BISAGRA HERMEX PULIDO 1 1/2"X1 3/16"',
             'precio'=>'5305',
             'stock'=>'150',
+			'preciocompra'=>'40.75',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -3457,6 +4076,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BISAGRA HERMEX PULIDO 1"X7/8"',
             'precio'=>'421',
             'stock'=>'150',
+			'preciocompra'=>'10.98',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -3468,6 +4089,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BISAGRA HERMEX PULIDO 2 1/2"X1 5/8"',
             'precio'=>'6194',
             'stock'=>'150',
+			'preciocompra'=>'10.76',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -3479,6 +4102,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BISAGRA HERMEX PULIDO 2"X 1 1/2"',
             'precio'=>'9705',
             'stock'=>'150',
+			'preciocompra'=>'33.2',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -3490,6 +4115,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BISAGRA HERMEX PULIDO 3 1/2"X2 1/8"',
             'precio'=>'9944',
             'stock'=>'150',
+			'preciocompra'=>'46.14',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -3501,6 +4128,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BISAGRA HERMEX PULIDO 3"X 1 15/16"',
             'precio'=>'602',
             'stock'=>'150',
+			'preciocompra'=>'30.98',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -3512,6 +4141,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BISAGRA HERMEX PULIDO 4"X 2 3/4"',
             'precio'=>'3182',
             'stock'=>'150',
+			'preciocompra'=>'49.55',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -3523,6 +4154,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BISAGRA TRUPER 3-1/2" REMACHADO 35L SANT',
             'precio'=>'4101',
             'stock'=>'150',
+			'preciocompra'=>'33.29',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -3534,6 +4167,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BISAGRA TRUPER LA 3 1/2 C.RED BIC-35L-',
             'precio'=>'961',
             'stock'=>'150',
+			'preciocompra'=>'23.85',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -3545,6 +4180,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BISAGRA TUBULAR 1/2',
             'precio'=>'2503',
             'stock'=>'150',
+			'preciocompra'=>'54.42',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -3556,6 +4193,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BISAGRA TUBULAR 3/4',
             'precio'=>'9632',
             'stock'=>'150',
+			'preciocompra'=>'12.2',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -3567,6 +4206,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BISAGRA TUBULAR 3/8',
             'precio'=>'652',
             'stock'=>'150',
+			'preciocompra'=>'35.48',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -3578,6 +4219,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BISAGRA TUBULAR 5/8',
             'precio'=>'4362',
             'stock'=>'150',
+			'preciocompra'=>'54.54',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -3589,6 +4232,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOCINA 6X9 3 VIAS 800 W PMPO DONKER',
             'precio'=>'9856',
             'stock'=>'150',
+			'preciocompra'=>'12.6',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3600,6 +4245,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOCINA MITZU REC/BT/TF/AUX/FM/USB/MANOS LIBRES NEG',
             'precio'=>'6194',
             'stock'=>'150',
+			'preciocompra'=>'60.83',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3611,6 +4258,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOCINA PORTATIL MITZU 2X4 180W BLUETOOH',
             'precio'=>'1401',
             'stock'=>'150',
+			'preciocompra'=>'57.59',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3622,6 +4271,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOCINA PORTATIL MITZU 6.5" 120W USB SD A',
             'precio'=>'8424',
             'stock'=>'150',
+			'preciocompra'=>'47.0',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3633,6 +4284,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOILER FOSET SOLAR 100 LTS TERMOTANQUE',
             'precio'=>'7915',
             'stock'=>'150',
+			'preciocompra'=>'14.63',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3644,6 +4297,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOMBA DE MANO 10" MAR-RAM BALONERA',
             'precio'=>'4306',
             'stock'=>'150',
+			'preciocompra'=>'5.24',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3655,6 +4310,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOMBA DE MANO 15" MAR-RAM',
             'precio'=>'7782',
             'stock'=>'150',
+			'preciocompra'=>'34.71',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3666,6 +4323,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOMBA DE MANO 20" MAR-RAM BP20MR',
             'precio'=>'5994',
             'stock'=>'150',
+			'preciocompra'=>'30.75',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3677,6 +4336,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOMBA DE MANO 23" TRUPER BOM-TR',
             'precio'=>'6622',
             'stock'=>'150',
+			'preciocompra'=>'41.08',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3688,6 +4349,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOMBA DE PIE MAR-RAM BAPMR',
             'precio'=>'5128',
             'stock'=>'150',
+			'preciocompra'=>'22.32',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3699,6 +4362,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOMBA DE SIFON PLASTICA P/GAS MAR-RAM',
             'precio'=>'5776',
             'stock'=>'150',
+			'preciocompra'=>'72.57',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3710,6 +4375,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOMBA EXTRACTORA DE LIQUIDOS MAR-RAM',
             'precio'=>'3497',
             'stock'=>'150',
+			'preciocompra'=>'35.01',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3721,6 +4388,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOMBA P/AGUA1/4 HP TRUPER BOAC-1/4 $',
             'precio'=>'155',
             'stock'=>'150',
+			'preciocompra'=>'30.12',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3732,6 +4401,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOMBA P/AGUA 1/2 HP 20 MTS PERIFERICANO IVA)',
             'precio'=>'283',
             'stock'=>'150',
+			'preciocompra'=>'28.96',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3743,6 +4414,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOMBA P/AGUA 1/2 HP IGOTO AUTOCEBANTE AT60',
             'precio'=>'95',
             'stock'=>'150',
+			'preciocompra'=>'45.58',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3754,6 +4427,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOMBA P/AGUA 1/2 HP PERIFERICA',
             'precio'=>'3903',
             'stock'=>'150',
+			'preciocompra'=>'42.39',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3765,6 +4440,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOMBA P/AGUA 1/2 HP PERIFERICA DUO IGOTO TPKM60',
             'precio'=>'6666',
             'stock'=>'150',
+			'preciocompra'=>'14.34',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3776,6 +4453,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOMBA P/AGUA 1/2 HP TRUPER BOAC-1/2 $',
             'precio'=>'1618',
             'stock'=>'150',
+			'preciocompra'=>'8.85',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3787,6 +4466,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOMBA P/AGUA 3/4 HP TRUPER BOAC-3/4 $',
             'precio'=>'8094',
             'stock'=>'150',
+			'preciocompra'=>'26.7',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3798,6 +4479,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOMBA P/AGUA3/4 HPPERIFERICA 8517 SA',
             'precio'=>'5617',
             'stock'=>'150',
+			'preciocompra'=>'72.12',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3809,6 +4492,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOMBA P/AGUA 1 1/2 HP TRUPER BOAC-1 1/',
             'precio'=>'3803',
             'stock'=>'150',
+			'preciocompra'=>'68.28',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3820,6 +4505,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOMBA P/AGUA 1 HP AKSI PERIFERICA',
             'precio'=>'2163',
             'stock'=>'150',
+			'preciocompra'=>'31.69',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3831,6 +4518,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOMBA P/AGUA 1 HP PERIFERICA 8516 SANT',
             'precio'=>'9406',
             'stock'=>'150',
+			'preciocompra'=>'22.01',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3842,6 +4531,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOMBA P/AGUA 1 HP TRUPER BOAC-1 $',
             'precio'=>'542',
             'stock'=>'150',
+			'preciocompra'=>'40.25',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3853,6 +4544,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOMBA P/W.C GRANDENEGRA 650. *',
             'precio'=>'449',
             'stock'=>'150',
+			'preciocompra'=>'27.03',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3864,6 +4557,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOMBA P/W.C. ROJA GRANDE 650 *',
             'precio'=>'823',
             'stock'=>'150',
+			'preciocompra'=>'25.27',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3875,6 +4570,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOMBA P/W.C. ROJA MEDIANA 550',
             'precio'=>'647',
             'stock'=>'150',
+			'preciocompra'=>'65.01',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3886,6 +4583,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOMBA P/W.C.MEDIANANEGRA 550. *',
             'precio'=>'764',
             'stock'=>'150',
+			'preciocompra'=>'79.97',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3897,6 +4596,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOMBA SUMERGIBLE 750W AKSI',
             'precio'=>'1882',
             'stock'=>'150',
+			'preciocompra'=>'60.96',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3908,6 +4609,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOMBA SUMERGIBLE AKSI AGUA SUCIA 400W',
             'precio'=>'7116',
             'stock'=>'150',
+			'preciocompra'=>'77.08',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3919,6 +4622,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOQUILLA P/SOPLETE CHICA « RH',
             'precio'=>'9935',
             'stock'=>'150',
+			'preciocompra'=>'61.73',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3930,6 +4635,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOQUILLA P/SOPLETE GRANDE 7/8 RH',
             'precio'=>'8327',
             'stock'=>'150',
+			'preciocompra'=>'61.29',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3941,6 +4648,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOQUILLA P/SOPLETE LINMEX C/CARTUCHO G-3',
             'precio'=>'1829',
             'stock'=>'150',
+			'preciocompra'=>'60.39',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3952,6 +4661,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOQUILLA P/SOPLETE TRUPER 65MM ROSCA',
             'precio'=>'4163',
             'stock'=>'150',
+			'preciocompra'=>'32.94',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3963,6 +4674,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BORLA DE LANA P/PULIDORA PRETUL',
             'precio'=>'5329',
             'stock'=>'150',
+			'preciocompra'=>'69.48',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3974,6 +4687,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BORLA PARA PULIR 100% LANA NO.5',
             'precio'=>'4156',
             'stock'=>'150',
+			'preciocompra'=>'52.04',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3985,6 +4700,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BORLA PARA PULIR 100% LANA NO.7',
             'precio'=>'4791',
             'stock'=>'150',
+			'preciocompra'=>'24.04',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -3996,6 +4713,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BORLA PARA PULIR 100% LANA NO.9',
             'precio'=>'1489',
             'stock'=>'150',
+			'preciocompra'=>'61.6',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -4007,6 +4726,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOTA HULE JARDINERA NO.24 TRUPER',
             'precio'=>'307',
             'stock'=>'150',
+			'preciocompra'=>'14.99',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -4018,6 +4739,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOTA HULE JARDINERA NO.25 TRUPER',
             'precio'=>'882',
             'stock'=>'150',
+			'preciocompra'=>'76.7',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -4029,6 +4752,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOTA HULE JARDINERA NO.26 TRUPER',
             'precio'=>'5202',
             'stock'=>'150',
+			'preciocompra'=>'49.13',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -4040,6 +4765,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOTA HULE JARDINERA NO.27 TRUPER',
             'precio'=>'3362',
             'stock'=>'150',
+			'preciocompra'=>'58.87',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -4051,6 +4778,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOTA HULE JARDINERA NO.28 TRUPER',
             'precio'=>'1207',
             'stock'=>'150',
+			'preciocompra'=>'35.44',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -4062,6 +4791,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOTA HULE JARDINERA NO.29 TRUPER',
             'precio'=>'5948',
             'stock'=>'150',
+			'preciocompra'=>'56.85',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -4073,6 +4804,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOTA HULE SANITARIA NO.25 BLANCA AKSI',
             'precio'=>'612',
             'stock'=>'150',
+			'preciocompra'=>'77.91',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -4084,6 +4817,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOTA HULE SANITARIA NO.26 BLANCA AKSI',
             'precio'=>'2757',
             'stock'=>'150',
+			'preciocompra'=>'12.87',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -4095,6 +4830,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOTA HULE SANITARIA NO.27 BLANCA AKSI',
             'precio'=>'5422',
             'stock'=>'150',
+			'preciocompra'=>'7.82',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -4106,6 +4843,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOTA HULE SANITARIA NO.28 BLANCA AKSI',
             'precio'=>'8842',
             'stock'=>'150',
+			'preciocompra'=>'36.73',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -4117,6 +4856,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOTELLA LIMONES FV98081LE-C',
             'precio'=>'7942',
             'stock'=>'150',
+			'preciocompra'=>'36.65',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -4128,6 +4869,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOTIQUIN CHICO BLANCO 23X16X7',
             'precio'=>'3185',
             'stock'=>'150',
+			'preciocompra'=>'75.24',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -4139,6 +4882,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOTIQUIN GRANDE BLANCO 35X25X7',
             'precio'=>'2098',
             'stock'=>'150',
+			'preciocompra'=>'44.59',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -4150,6 +4895,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOTIQUIN MEDIANO BLANCO 30X21X7',
             'precio'=>'936',
             'stock'=>'150',
+			'preciocompra'=>'79.71',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -4161,6 +4908,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOTON P/TIMBRE ROYER 3012 *',
             'precio'=>'8387',
             'stock'=>'150',
+			'preciocompra'=>'34.0',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4172,6 +4921,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOTON TIMBRE ROYER CUAD.202',
             'precio'=>'9127',
             'stock'=>'150',
+			'preciocompra'=>'55.83',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4183,6 +4934,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BOTON TIMBRE VISIBLE PLANO AKSI',
             'precio'=>'472',
             'stock'=>'150',
+			'preciocompra'=>'5.95',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4194,6 +4947,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BRAZO P/REGADERA C/CHAPETON FOSET',
             'precio'=>'8929',
             'stock'=>'150',
+			'preciocompra'=>'67.31',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -4205,6 +4960,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BRAZO P/REGADERA LARGO MAGA¥A 40 CTM',
             'precio'=>'6359',
             'stock'=>'150',
+			'preciocompra'=>'72.2',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -4216,6 +4973,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BRAZO P/REGADERA MAGA¥A 50 CTM',
             'precio'=>'5009',
             'stock'=>'150',
+			'preciocompra'=>'55.09',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -4227,6 +4986,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'BRAZO Y CHAPETON AKSI METALICO',
             'precio'=>'5966',
             'stock'=>'150',
+			'preciocompra'=>'61.21',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'4'
@@ -4238,6 +4999,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE ACERO MAR-RAM MULTIUSOS 12 MMX2MTS',
             'precio'=>'4991',
             'stock'=>'150',
+			'preciocompra'=>'48.56',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4249,6 +5012,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE ACERO PARA BICICLETA 5/16X24 BR',
             'precio'=>'311',
             'stock'=>'150',
+			'preciocompra'=>'62.67',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4260,6 +5025,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE ACERO PARA BICICLETA 5/16X36 MAR-R',
             'precio'=>'576',
             'stock'=>'150',
+			'preciocompra'=>'76.19',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4271,6 +5038,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE COAXIAL RG-59 100 MTS MAGAÑA',
             'precio'=>'3551',
             'stock'=>'150',
+			'preciocompra'=>'74.37',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4282,6 +5051,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE COAXIAL RG-59 100 MTS VOLTECH',
             'precio'=>'6028',
             'stock'=>'150',
+			'preciocompra'=>'19.59',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4293,6 +5064,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE COAXIAL RG-59 20 MTS NEGRO',
             'precio'=>'9487',
             'stock'=>'150',
+			'preciocompra'=>'60.86',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4304,6 +5077,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE COAXIAL RG-59 SANELEC 500 MTS',
             'precio'=>'9349',
             'stock'=>'150',
+			'preciocompra'=>'43.0',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4315,6 +5090,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE COAXIAL RG-59 SANTUL 100 MTS',
             'precio'=>'8283',
             'stock'=>'150',
+			'preciocompra'=>'19.71',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4326,6 +5103,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE COAXIAL RG-6 100 MTS MAGAÑA',
             'precio'=>'3371',
             'stock'=>'150',
+			'preciocompra'=>'71.91',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4337,6 +5116,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE COAXIAL RG-6 2 MTS CABLEVISION',
             'precio'=>'2006',
             'stock'=>'150',
+			'preciocompra'=>'67.94',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4348,6 +5129,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE COAXIAL RG-6 20MTS OJO CABLEVISION',
             'precio'=>'9916',
             'stock'=>'150',
+			'preciocompra'=>'20.33',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4359,6 +5142,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE CON CANDADO PARA BICICLETA 5/16',
             'precio'=>'356',
             'stock'=>'150',
+			'preciocompra'=>'64.41',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4370,6 +5155,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE DE ACERO 1/16 RIGIDO RECUBIERTO FIERO',
             'precio'=>'8055',
             'stock'=>'150',
+			'preciocompra'=>'75.81',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4381,6 +5168,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE DE ACERO 1/16-3/32 FORRADO 7X7 150',
             'precio'=>'9595',
             'stock'=>'150',
+			'preciocompra'=>'38.96',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4392,6 +5181,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE DE ACERO 1/4 FIERO FORRADO 7X19H 75MT',
             'precio'=>'3808',
             'stock'=>'150',
+			'preciocompra'=>'54.23',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4403,6 +5194,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE DE ACERO 3/16 RECUBIERTO 75 MTS FIERO',
             'precio'=>'258',
             'stock'=>'150',
+			'preciocompra'=>'63.37',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4414,6 +5207,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE DE ACERO 3/16" RIGIDO FIERO 75 MTS CAB-3/16R',
             'precio'=>'9864',
             'stock'=>'150',
+			'preciocompra'=>'61.29',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4425,6 +5220,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE DE ACERO 7X7 HILOS 75 MTS 2240 KG',
             'precio'=>'8544',
             'stock'=>'150',
+			'preciocompra'=>'68.41',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4436,6 +5233,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE DE VIDA 2 GANCHOS TRUPER 1.5 MTS.',
             'precio'=>'3131',
             'stock'=>'150',
+			'preciocompra'=>'52.28',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4447,6 +5246,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE DE VIDA TRUPER 2 GANCH CAB-5489-20',
             'precio'=>'22',
             'stock'=>'150',
+			'preciocompra'=>'10.66',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4458,6 +5259,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE HDMI MACHO MACHO 90 CM VOLTECH',
             'precio'=>'716',
             'stock'=>'150',
+			'preciocompra'=>'41.4',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4469,6 +5272,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE NO.10 *',
             'precio'=>'3514',
             'stock'=>'150',
+			'preciocompra'=>'51.73',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4480,6 +5285,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE NO.10 BLANCO KEERALUCOBRE',
             'precio'=>'5422',
             'stock'=>'150',
+			'preciocompra'=>'73.2',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4491,6 +5298,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE NO.10 BLANCO VOLTECH',
             'precio'=>'657',
             'stock'=>'150',
+			'preciocompra'=>'74.11',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4502,6 +5311,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE NO.10 NEGRO KEER THW ALUCOBRE',
             'precio'=>'6581',
             'stock'=>'150',
+			'preciocompra'=>'74.22',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4513,6 +5324,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE NO.10 NEGRO VOLTECH',
             'precio'=>'3197',
             'stock'=>'150',
+			'preciocompra'=>'7.5',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4524,6 +5337,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE NO.10 ROJO KEER THW ALUCOBRE',
             'precio'=>'6239',
             'stock'=>'150',
+			'preciocompra'=>'12.98',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4535,6 +5350,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE NO.10 ROJO VOLTECH',
             'precio'=>'1608',
             'stock'=>'150',
+			'preciocompra'=>'12.27',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4546,6 +5363,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE NO.10 VERDE KEER THW ALUCOBRE',
             'precio'=>'9321',
             'stock'=>'150',
+			'preciocompra'=>'48.4',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4557,6 +5376,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE NO.10 VERDE SANTUL',
             'precio'=>'178',
             'stock'=>'150',
+			'preciocompra'=>'7.24',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4568,6 +5389,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE NO.12',
             'precio'=>'939',
             'stock'=>'150',
+			'preciocompra'=>'6.1',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4579,6 +5402,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE NO.12 BLANCO IUSA',
             'precio'=>'9354',
             'stock'=>'150',
+			'preciocompra'=>'50.92',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4590,6 +5415,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE NO.12 BLANCO KEER THW ALUCOBRE',
             'precio'=>'3955',
             'stock'=>'150',
+			'preciocompra'=>'36.13',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4601,6 +5428,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE NO.12 BLANCO VOLTECH',
             'precio'=>'171',
             'stock'=>'150',
+			'preciocompra'=>'20.28',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4612,6 +5441,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE NO.12 NEGRO IUSA',
             'precio'=>'6688',
             'stock'=>'150',
+			'preciocompra'=>'37.88',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4623,6 +5454,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE NO.12 NEGRO VOLTECH',
             'precio'=>'8307',
             'stock'=>'150',
+			'preciocompra'=>'17.05',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4634,6 +5467,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE NO.12 NEGROTHW ALUCOBRE',
             'precio'=>'1474',
             'stock'=>'150',
+			'preciocompra'=>'66.05',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4645,6 +5480,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE NO.12 ROJO IUSA',
             'precio'=>'2448',
             'stock'=>'150',
+			'preciocompra'=>'61.67',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4656,6 +5493,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE NO.12 ROJO KEER THW ALUCOBRE',
             'precio'=>'7819',
             'stock'=>'150',
+			'preciocompra'=>'5.14',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4667,6 +5506,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE NO.12 ROJO VOLTECH',
             'precio'=>'175',
             'stock'=>'150',
+			'preciocompra'=>'11.19',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4678,6 +5519,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE NO.12 VERDE KEER ALUCOBRE',
             'precio'=>'5295',
             'stock'=>'150',
+			'preciocompra'=>'11.56',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4689,6 +5532,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE NO.12 VERDE SANELEC',
             'precio'=>'1224',
             'stock'=>'150',
+			'preciocompra'=>'68.16',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4700,6 +5545,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE NO.14',
             'precio'=>'236',
             'stock'=>'150',
+			'preciocompra'=>'59.62',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4711,6 +5558,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE NO.14 BLANCO VOLTECH',
             'precio'=>'7508',
             'stock'=>'150',
+			'preciocompra'=>'14.71',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4722,6 +5571,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE NO.14 NEGRO VOLTECH',
             'precio'=>'6833',
             'stock'=>'150',
+			'preciocompra'=>'67.58',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4733,6 +5584,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE NO.14 ROJO VOLTECH',
             'precio'=>'1642',
             'stock'=>'150',
+			'preciocompra'=>'5.42',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4744,6 +5597,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE NO.18 BICOLOR MAGA¥A',
             'precio'=>'7709',
             'stock'=>'150',
+			'preciocompra'=>'22.98',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4755,6 +5610,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE NO.18 BICOLOR VOLTECH 100M',
             'precio'=>'3621',
             'stock'=>'150',
+			'preciocompra'=>'76.41',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4766,6 +5623,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE NO.18 POLARIZADO MITZU',
             'precio'=>'4976',
             'stock'=>'150',
+			'preciocompra'=>'71.98',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4777,6 +5636,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE NO.18 POLARIZADO VOLTECH',
             'precio'=>'4017',
             'stock'=>'150',
+			'preciocompra'=>'63.43',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4788,6 +5649,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE NO.22 BICOLOR MAGA¥A',
             'precio'=>'5159',
             'stock'=>'150',
+			'preciocompra'=>'35.42',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4799,6 +5662,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE NO.22 BICOLOR VOLTECH',
             'precio'=>'3741',
             'stock'=>'150',
+			'preciocompra'=>'61.84',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4810,6 +5675,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE NO.8',
             'precio'=>'3231',
             'stock'=>'150',
+			'preciocompra'=>'36.28',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4821,6 +5688,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE NO.8 KEER',
             'precio'=>'4929',
             'stock'=>'150',
+			'preciocompra'=>'21.36',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4832,6 +5701,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE P/CAFETERA *',
             'precio'=>'4954',
             'stock'=>'150',
+			'preciocompra'=>'58.18',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4843,6 +5714,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE P/CAFETERA DAYCO',
             'precio'=>'9983',
             'stock'=>'150',
+			'preciocompra'=>'65.25',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4854,6 +5727,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE P/GRAB.UNIVERSAL C/RANURA *',
             'precio'=>'5052',
             'stock'=>'150',
+			'preciocompra'=>'40.87',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4865,6 +5740,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE P/SOLDAR 10 M.SENC.',
             'precio'=>'5312',
             'stock'=>'150',
+			'preciocompra'=>'64.62',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4876,6 +5753,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CABLE P/SOLDAR 5M.SENC.B',
             'precio'=>'1402',
             'stock'=>'150',
+			'preciocompra'=>'14.39',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'5'
@@ -4887,6 +5766,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CHAPA PHILLIPS 715 I IZQUIERDA CLASICA',
             'precio'=>'2525',
             'stock'=>'150',
+			'preciocompra'=>'35.89',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -4898,6 +5779,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CHAPA PHILLIPS 800 FIJA DERECHALL/PLAN',
             'precio'=>'178',
             'stock'=>'150',
+			'preciocompra'=>'28.98',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -4909,6 +5792,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CHAPA PHILLIPS 800 FIJA IZQUIERDA LL/PLA',
             'precio'=>'1327',
             'stock'=>'150',
+			'preciocompra'=>'55.07',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -4920,6 +5805,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CHAPA PHILLIPS AS-725 IF D ABG LL/QUESO',
             'precio'=>'1294',
             'stock'=>'150',
+			'preciocompra'=>'42.93',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -4931,6 +5818,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CHAPA PHILLIPS AS-725-IF 1 ABG LL/QUESO',
             'precio'=>'2491',
             'stock'=>'150',
+			'preciocompra'=>'38.09',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -4942,6 +5831,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CHAPA PHILLIPS HS-4000 AS-6-IF-IZQUIERDA',
             'precio'=>'8571',
             'stock'=>'150',
+			'preciocompra'=>'66.57',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -4953,6 +5844,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CHAPA PHILLIPS HS-4000-AS 6 D IF AI',
             'precio'=>'5384',
             'stock'=>'150',
+			'preciocompra'=>'23.03',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -4964,6 +5857,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CHAPA PHILLIPS HS-4100 AS-6 DF DERECHA',
             'precio'=>'1204',
             'stock'=>'150',
+			'preciocompra'=>'44.22',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -4975,6 +5870,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CHAPA PHILLIPS HS-4100-AS 6 I IF AI',
             'precio'=>'9869',
             'stock'=>'150',
+			'preciocompra'=>'43.78',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -4986,6 +5883,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CHAPA PHILLIPS X-720 IF D LLAVE TETRA',
             'precio'=>'5734',
             'stock'=>'150',
+			'preciocompra'=>'20.35',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -4997,6 +5896,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CHAPA PHILLIPS X-720 IF I LLAVE TETRA',
             'precio'=>'9063',
             'stock'=>'150',
+			'preciocompra'=>'34.58',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -5008,6 +5909,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CHAPA PHILLIPS X900 DERECHA LL/TETRA',
             'precio'=>'8113',
             'stock'=>'150',
+			'preciocompra'=>'13.72',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -5019,6 +5922,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CHAPA PHILLIPS X900 IZQUIERDA LL/TETRA',
             'precio'=>'3375',
             'stock'=>'150',
+			'preciocompra'=>'17.43',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -5030,6 +5935,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CHAPA SANTUL TIPO/715 CLASICA DERECHA',
             'precio'=>'2537',
             'stock'=>'150',
+			'preciocompra'=>'38.91',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -5041,6 +5948,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CHAROLA P/PINTAR AKSI',
             'precio'=>'256',
             'stock'=>'150',
+			'preciocompra'=>'13.25',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -5052,6 +5961,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CHAROLA TRUPER PARA PINTURA',
             'precio'=>'5189',
             'stock'=>'150',
+			'preciocompra'=>'22.26',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'7'
@@ -5063,6 +5974,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CLAVO CON CABEZA 3" KILO FIERO',
             'precio'=>'3782',
             'stock'=>'150',
+			'preciocompra'=>'20.33',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -5074,6 +5987,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CLAVO CON CABEZA 4 CAJA CON 25K FIERO K',
             'precio'=>'4374',
             'stock'=>'150',
+			'preciocompra'=>'33.01',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -5085,6 +6000,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CLAVO CON CABEZA 4" KILO FIERO',
             'precio'=>'521',
             'stock'=>'150',
+			'preciocompra'=>'40.5',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -5096,6 +6013,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CLAVO CON CABEZA 5" BOLSA KILO FIERO',
             'precio'=>'9485',
             'stock'=>'150',
+			'preciocompra'=>'18.14',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -5107,6 +6026,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CLAVO P/CONCRETO GALVANIZADO 2 1/2 KILO',
             'precio'=>'586',
             'stock'=>'150',
+			'preciocompra'=>'57.72',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -5118,6 +6039,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CLAVO P/CONCRETO GALVANIZADO 2" KILO',
             'precio'=>'848',
             'stock'=>'150',
+			'preciocompra'=>'55.22',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -5129,6 +6052,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CLAVO P/CONCRETO GALVANIZADO 3/4 KILO FI',
             'precio'=>'6657',
             'stock'=>'150',
+			'preciocompra'=>'47.51',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -5140,6 +6065,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CLAVO P/CONCRETO GALVANIZADO 3« KILO',
             'precio'=>'741',
             'stock'=>'150',
+			'preciocompra'=>'29.45',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -5151,6 +6078,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CLAVO P/CONCRETO NEGRO 1 1/2" KILO',
             'precio'=>'3734',
             'stock'=>'150',
+			'preciocompra'=>'16.74',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -5162,6 +6091,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CLAVO P/CONCRETO NEGRO 1" KILO',
             'precio'=>'6449',
             'stock'=>'150',
+			'preciocompra'=>'79.92',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -5173,6 +6104,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CLAVO P/CONCRETO NEGRO 2 1/2 KILO',
             'precio'=>'1043',
             'stock'=>'150',
+			'preciocompra'=>'46.66',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -5184,6 +6117,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CLAVO P/CONCRETO NEGRO 2" KILO',
             'precio'=>'5867',
             'stock'=>'150',
+			'preciocompra'=>'39.35',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -5195,6 +6130,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CLAVO P/CONCRETO NEGRO 3 1/2 POR KILO',
             'precio'=>'6204',
             'stock'=>'150',
+			'preciocompra'=>'8.8',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -5206,6 +6143,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CLAVO P/CONCRETO NEGRO 3" KILO',
             'precio'=>'3421',
             'stock'=>'150',
+			'preciocompra'=>'12.24',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -5217,6 +6156,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CLAVO P/CONCRETO NEGRO 3/4 POR KILO',
             'precio'=>'8493',
             'stock'=>'150',
+			'preciocompra'=>'58.45',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -5228,6 +6169,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CLAVO P/CONCRETO NEGRO 3/4" 1 K',
             'precio'=>'220',
             'stock'=>'150',
+			'preciocompra'=>'72.5',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -5239,6 +6182,8 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CLAVO SIN CABEZA 1 1/2" FIERO KILO',
             'precio'=>'5522',
             'stock'=>'150',
+			'preciocompra'=>'67.37',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
@@ -5250,16 +6195,12 @@ class ProductoSeeder extends Seeder
             'descripcion'=>'CLAVO SIN CABEZA 1 FIERO KILO',
             'precio'=>'101',
             'stock'=>'150',
+			'preciocompra'=>'31.63',
+			'stockinicial'=>'15',
             'estado'=>'ACTIVO',
 			'cant_min'=>'15',
             'categoria_id'=>'3'
         ]);
-
-
-
-
-
-
 
 
 

@@ -14,9 +14,9 @@ class Formulario extends Component
 {
 
     public $ventaCliente,$selectClie,$clientes,$valor,$nombreClie,$apellidos,$cinit,$busqueda;
-    public $modalClie= false,$modalProd = false;
+    public $modalClie= false,$modalProd = false,$experimento;
     public $prod,$descripcion,$precioventa,$precio,$cantidad,$subtotal,$idProd;
-    public $datosCliente,$arreglo="primero",$estado='PENDIENTE',$listaProd=[];
+    public $datosCliente,$arreglo="primero",$estado='PROFORMA',$listaProd=[];
     public $idventa,$dVenta,$lprod,$v=[],$lv=[],$actualizar,$venta,$cliente,$producto,$cont;
 
     protected $listeners = ['addCliente','cerrarModal','addProducto','guardar','editaVenta'];
@@ -27,6 +27,7 @@ class Formulario extends Component
             $this->actualizar = $valor;
             $this->venta =Venta::find($valor);
             $this->selectClie = $this->venta->cliente->id;
+            $this->estado = $this->venta->estado;
 
 
             $p=$this->venta->productos;
@@ -120,7 +121,7 @@ class Formulario extends Component
     public function nuevoCliente()
     {
         if ($this->cinit!='') {
-            $this->cliente = Cliente::where('ci',$this->cinit).get();
+            $this->cliente = Cliente::where('ci',$this->cinit)->get();
             if (is_null($this->cliente)) {
                 $nClie = new Cliente();
                 $nclie->nombres = $this->nombres;
@@ -176,9 +177,34 @@ class Formulario extends Component
                     ['cantidad'=>$elem->cantidad,
                     'precioventa'=>$elem->precio
                 ]);
+                $anterior = Producto::find($elem->id)->stock;
+                if ($v->estado=='PEDIDO')
+                {
+
+                    Producto::updateOrCreate(['id'=>$elem->id],
+                    [
+
+                        'stock'=>$anterior-$elem->cantidad,
+
+                    ]);
+
+                }
+                if ($v->estado=='CANCELADO')
+                {
+
+                    Producto::updateOrCreate(['id'=>$elem->id],
+                    [
+
+                        'stock'=>$anterior+$elem->cantidad,
+
+                    ]);
+
+                }
 
 
             }
+
+
             return view('livewire.venta.ventas');
 
 

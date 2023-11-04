@@ -68,7 +68,7 @@ class Nueva extends Component
         //$this->arreglo = $que;
 
         $v = new Venta();
-            $v->estado = 'Pendiente';
+            $v->estado = 'PROFORMA';
             $v->cliente_id = $this->selecClie;
             $v->user_id =  Auth::user()->id;
             $v->save();

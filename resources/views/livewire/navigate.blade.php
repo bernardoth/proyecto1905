@@ -70,6 +70,9 @@
                         <a href="{{url('/venta/ventas')}}"
                             class=" bg-gray-700 text-gray-300 hover:bg-gray-500 hover:text-white mt-2 px-3 py-2 rounded-md text-sm font-medium">
                             Ventas</a>
+                            <a href="{{url('/venta/ventas')}}"
+                            class=" bg-gray-700 text-gray-300 hover:bg-gray-500 hover:text-white mt-2 px-3 py-2 rounded-md text-sm font-medium">
+                            Proformas</a>
                         <a href="{{url('/compra/compras')}}"
                             class=" bg-gray-700 text-gray-300 hover:bg-gray-500 hover:text-white mt-2 px-3 py-2 rounded-md text-sm font-medium">
                             Compras</a>

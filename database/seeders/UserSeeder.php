@@ -29,5 +29,18 @@ class UserSeeder extends Seeder
             'direccion'=>"23 de Marzo #1042"
 
         ]);
+        User::create([
+            'name'=> 'Lorena',
+            'apellidopaterno'=>'Pacheco',
+            'apellidomaterno'=>'Mamani',
+            'carnet'=>'699656',
+            'celular'=>'72599568',
+
+            'cargo'=>'NOOB',
+            'email'=>'losu1905@gmail.com',
+            'password'=>bcrypt('Lorena1905'),
+            'direccion'=>"23 de Marzo #1042"
+
+        ]);
     }
 }
