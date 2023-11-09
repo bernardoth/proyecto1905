@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('compras', function (Blueprint $table) {
             $table->id();
-            $table->string('numeroDoc', 20)->nullable();
-            $table->enum('estado',['CANCELADO','PAGADO','ANULADO'])->default('PAGADO');
+            $table->integer('numeroDoc')->nullable();
+            $table->enum('estado',['PEDIDO','CANCELADO'])->default('PEDIDO');
             $table->foreignId('proveedor_id')->constrained();
             $table->foreignId('user_id')->constrained();
             $table->timestamps();

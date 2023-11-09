@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('producto_venta', function (Blueprint $table) {
             $table->id();
+            
             $table->integer('cantidad');
             $table->decimal('precioventa', 10, 2);
             $table->foreignId('venta_id')->constrained();

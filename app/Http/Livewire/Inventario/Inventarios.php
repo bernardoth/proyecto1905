@@ -3,20 +3,24 @@
 namespace App\Http\Livewire\Inventario;
 use Livewire\WithPagination;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Carbon;
 use App\Models\Producto;
 use App\Models\Categoria;
 use Livewire\Component;
 
 class Inventarios extends Component
 {
-    use WithPagination;
+    //use WithPagination;
     public $productosl,$search,$codigo,$descripcion,$precio,$stock,$estado,$categoria_id,$idprod;
     public $cat,$nomcat,$idcat,$cant_min,$productos;
-    public $modal;
+    public $modal,$fechainicio,$fechafin,$tipo;
 
     public function mount()
     {
         $this->search = '';
+        //$this->fechainicio = Carbon::now()->format('Y-m-d');
+        $this->fechainicio = Carbon::now()->format('Y-m-d');
+        $this->fechafin = Carbon::now()->format('Y-m-d');
     }
 
     public function render()
@@ -27,7 +31,10 @@ class Inventarios extends Component
                 'productos.id',
                 'productos.descripcion',
                 'productos.precio',
-                'productos.stock',
+                'productos.precioventa',
+                'productos.stockinicial',
+                'productos.entrada',
+                'productos.salida',
                 'productos.estado',
                 'categorias.nombre')->
             join('categorias','categorias.id','=','productos.categoria_id')->

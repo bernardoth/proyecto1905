@@ -9,7 +9,7 @@ class Venta extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['estado','cliente_id','user_id'];
+    protected $fillable = ['numeroDoc','estado','cliente_id','user_id'];
 
 
 
@@ -25,6 +25,7 @@ class Venta extends Model
 
     public function productos()
     {
-        return $this->belongsToMany(Producto::class)->withPivot('cantidad','precioventa');
+        return $this->belongsToMany(Producto::class)
+                    ->withPivot('id','cantidad','precioventa');
     }
 }

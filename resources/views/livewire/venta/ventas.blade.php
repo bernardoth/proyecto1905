@@ -32,7 +32,7 @@
                 <table class="bg-gray-700 py-2 text-gray-200 table-auto w-full pb-5 text-center">
                     <thead class="bg-slate-800 h-10 border-2 border-slate-400">
                         <tr>
-                            <th>Cod</th>
+                            <th>Numero</th>
                             <th>Estado</th>
                             <th>Nombre</th>
                             <th>Fecha</th>
@@ -42,14 +42,14 @@
                     <tbody>
                         @foreach ($listaVentas as $v )
                         <tr class="border-b border-gray-500 ">
-                            <td >{{$v->id}}</td>
+                            <td >{{$v->numeroDoc}}</td>
                             <td >{{$v->estado}}</td>
                             <td >{{$v->nombres}}</td>
 
                             <td>{{$v->updated_at}}</td>
                             <td class="py-3">
-                                
-                                @if ($usuario=='ADMIN' )
+
+                                @if ($usuario->cargo=='ADMIN' )
                                 <button wire:click="editar({{$v->id}})"
                                 class="bg-green-500 hover:bg-green-400 px-4 py-2 display:flex align-items: center"
                                 >Edit</button>
@@ -62,7 +62,7 @@
                                 </a>
                                 @else
                                     @if ($tipo=='PEDIDO')
-                                        
+
                                         <a href="{{URL::to('/notaventa/'.$v->id)}}"  target="_blank" class="bg-red-900 hover:bg-red-500 text-white font-bold  py-2 px-6">
                                             PDF
                                         </a>
@@ -71,19 +71,19 @@
                                     class="bg-green-500 hover:bg-green-400 px-4 py-2 display:flex align-items: center"
                                     >Edit</button>
                                     <a href="{{URL::to('/notaventa/'.$v->id)}}"  target="_blank" class="bg-red-900 hover:bg-red-500 text-white font-bold  py-2 px-6">
-                                        PDFy
+                                        PDF
                                     </a>
 
                                     @endif
 
-                                    
-                                @endif
-                                
-                                
-                                
-                                
 
-                                
+                                @endif
+
+
+
+
+
+
                             </td>
                         </tr>
                         @endforeach

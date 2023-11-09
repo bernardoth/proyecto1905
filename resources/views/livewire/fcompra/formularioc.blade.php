@@ -6,16 +6,16 @@
                     Datos Compra
                 </div>
 
-                    <div class="col-span-3 mt-6">
+                    <div class="col-span-3 mt-6 text-gray-300">
                         <select wire:model ="estado"class="bg-green-600 border-white" name="" id="estado">
-                            <option  selected value="PENDIENTE">PENDIENTE</option>
-                            <option value="PAGADO">PAGADO</option>
+                            <option  selected value="PEDIDO">NOTA DE COMPRA</option>
+
                             <option value="CANCELADO">CANCELADO</option>
                         </select>
                     </div>
-                    <div class="col-span-2 text-white">
+                    <div class="col-span-2 text-white bg-green-20">
                         <label for="">Numero de Documento: </label>
-                        <input type="text" name="numeroDoc" id="numeroDoc" >
+                        <input wire:model="numeroDoc" type="text" name="numeroDoc" id="numeroDoc" >
                     </div>
 
                 <div class="col-span-8 text-white bg-slate-700 px-3 py-3">

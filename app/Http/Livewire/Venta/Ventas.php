@@ -26,7 +26,7 @@ class Ventas extends Component
         $this->listaClientes = Cliente::all();
         //$this->listaVentas = Venta::where('cliente_id','like','%'.$this->search.'%')->get();
         //$this->fecha = '2023-01-01';
-        $this->listaVentas = Venta::select('ventas.id','ventas.estado','ventas.cliente_id','ventas.updated_at','clientes.nombres')
+        $this->listaVentas = Venta::select('ventas.id','ventas.numeroDoc','ventas.estado','ventas.cliente_id','ventas.updated_at','clientes.nombres')
         ->join('clientes','ventas.cliente_id','=','clientes.id')
         ->where('nombres','like','%'.$this->search.'%')
         ->whereDate('ventas.updated_at','>=',$this->fecha)

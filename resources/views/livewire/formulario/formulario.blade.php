@@ -11,6 +11,7 @@
                             <option value="CANCELADO">CANCELADO</option>
                         </select>
                     </div>
+
                 </div>
                 <div class="col-span-8 text-white bg-slate-700 px-3 py-3">
                     Datos del Cliente
@@ -67,8 +68,9 @@
                     </div>
                     <div class="cols-span-1 text-gray-300">
                         <label class="block " for="cant" >Cantidad:  </label>
+                        <input type="number" hidden name="stock" id="stock" wire:model="stock">
                         <input @click="subTotal()"
-                        class="w-full bg-gray-500" type="number"  min=1 max=9999999 name="cant" id="cantidad">
+                        class="w-full bg-gray-500" type="number"  min=1 max=9999999 name="cantidad" id="cantidad">
                     </div>
                     <div class="cols-span-1 text-gray-300">
                         <label class="block " for="precio">Precio:  </label>
@@ -189,13 +191,21 @@
                 let precio = document.querySelector('#precio').value;
                 let cantidad = document.querySelector('#cantidad');
                 let subtotal = document.querySelector('#subtotal');
+                let stock = document.querySelector('#stock');
 
             cantidad.addEventListener('input', actualizar);
             function actualizar(e){
                 cantidad.value = e.target.value;
-                let valor = cantidad.value * precio;
-                subtotal.value = valor;
-                //console.log('cambio change: '+valor);
+                if (  Number(cantidad.value)<=Number(stock.value)) {
+
+                    let valor = cantidad.value * precio;
+                    subtotal.value = valor;
+                    //console.log('cambio change: '+valor);
+                }else{
+                    alert('Cantidad en Stock insuficiente');
+                    document.querySelector('#cantidad').value = '';
+                }
+
 
                 }
             },
@@ -263,6 +273,7 @@
                 } else {
 
                     alert('La cantidad debe ser mayor a cero');
+                    document.querySelector('#cantidad').value = '';
 
                 }
 

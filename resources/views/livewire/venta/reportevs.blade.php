@@ -19,7 +19,7 @@
             </div>
             <div class="py-2 col-span-2 px-2 bg-slate-600 ">
 
-                <label class="text-gray-200" for="fechainicio">Fecha final</label>
+                <label class="text-gray-200" for="fechafin">Fecha final</label>
 
                 <input wire:model="fechafin" class="block" type="date" name="fechafin" id="fechafin">
             </div>

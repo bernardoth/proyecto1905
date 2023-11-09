@@ -12,9 +12,9 @@ use App\Models\User;
 
 class Formularioc extends Component
 {
-    public $modProv,$nombreProv,$apellidos,$cinit,$valor,$modalProv,$modalProd,$idprod;
+    public $modProv,$nombreProv,$apellidos,$cinit,$valor,$modalProv,$modalProd,$idprod,$proveedor,$idProd;
     public $selectProv,$idcompra,$listaProd=[],$precio,$cantidad,$producto,$descripcion,$subtotal;
-    public $actualizar = 0,$compra,$arreglo="primero",$v=[],$lv=[],$estado='PENDIENTE';
+    public $actualizar = 0,$compra,$arreglo="primero",$v=[],$lv=[],$estado='PEDIDO',$numeroDoc;
     protected $listeners = ['cerrarModal','addProv','addProducto','cerrarModal','guardarCompra','editaCompra'];
 
     public function mount($valor)
@@ -136,8 +136,8 @@ class Formularioc extends Component
         }
         $v = Compra::updateOrCreate(
             ['id'=>$this->idcompra],
-            ['numeroDoc' => 12345,
-            'estado'=>"CANCELADO",
+            ['numeroDoc' => $this->numeroDoc,
+            'estado'=>$this->estado,
             'proveedor_id'=>$this->selectProv,
             'user_id'=>Auth::user()->id]);
 
@@ -151,6 +151,13 @@ class Formularioc extends Component
                     $elem->id,
                     ['cantidad'=>$elem->cantidad,
                     'preciocompra' => $elem->precio,
+
+                ]);
+                $anterior = Producto::find($elem->id)->entrada;
+                Producto::updateOrCreate(['id'=>$elem->id],
+                [
+
+                    'entrada'=>$anterior+$elem->cantidad,
 
                 ]);
 

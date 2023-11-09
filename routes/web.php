@@ -15,6 +15,7 @@ use App\Http\Livewire\User\Users;
 use App\Http\Livewire\Inventario\Inventarios;
 
 use App\Http\Controllers\ExportController;
+use App\Http\Controllers\InventarioController;
 use App\Http\Controllers\VentasreporteController;
 
 
@@ -65,6 +66,7 @@ Route::middleware([
     //Route::get('/report/reports/que/{id}',[ExportController::class,'miReporte']);
     Route::get('/notaventa/{id}',[ExportController::class,'miReporte']);
     Route::get('/reportesventas/{fechainicio}/{fechafin}',[VentasreporteController::class,'reportesVentas']);
+    Route::get('/inventarioreporte/{fechainicio}/{fechafin}/{id}',[InventarioController::class,'inventarioReporte']);
 
 
 

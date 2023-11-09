@@ -79,8 +79,11 @@
 
                                 <x-jet-dropdown align="right" width="48">
                                     <x-slot name="trigger">
-
-
+                                        @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
+                                            <button class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition">
+                                                <img class="h-8 w-8 rounded-full object-cover" src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" />
+                                            </button>
+                                        @else
                                             <span class="inline-flex rounded-md">
                                                 <button type="button" class="bg-gray-700 hover:bg-gray-500 inline-flex items-center mt-2 px-3 py-3 border border-transparent text-sm leading-4 font-medium rounded-md text-white hover:text-white focus:outline-none transition">
                                                     Reportes
@@ -89,12 +92,12 @@
                                                     </svg>
                                                 </button>
                                             </span>
-
+                                        @endif
                                     </x-slot>
 
                                     <x-slot name="content">
                                         <!-- reportes-->
-                                        <div class="block px-4 py-2 text-xs bg-slate-300 hover:bg-white text-gray-800">
+                                        <div class="block px-4 py-2 text-xs bg-slate-300 hover:bg-white text-gray-700">
                                         <x-jet-dropdown-link href="{{url('/venta/reportevs')}}">
                                                 Reporte de ventas
                                         </x-jet-dropdown-link>
@@ -102,11 +105,18 @@
                                         <x-jet-dropdown-link href="{{url('/inventario/inventarios')}}">
                                             Inventarios
                                         </x-jet-dropdown-link>
-
-                                        <x-jet-dropdown-link href="">
-                                                tres
+                                        <!-- provional
+                                        <x-jet-dropdown-link href="{{url('/venta/reportevs')}}">
+                                                Reporte de ventas
                                         </x-jet-dropdown-link>
+                                        -->
 
+
+                                        @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
+                                            <x-jet-dropdown-link href="{{ route('api-tokens.index') }}">
+                                                tres
+                                            </x-jet-dropdown-link>
+                                        @endif
 
                                         <div class="border-t border-gray-100"></div>
 
@@ -131,7 +141,7 @@
                                 </button>
                             @else
                                 <span class="inline-flex rounded-md">
-                                    <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-lg leading-4 font-medium rounded-md text-white bg-gray-900 hover:text-green-700 focus:outline-none transition">
+                                    <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-white bg-gray-900 hover:text-green-700 focus:outline-none transition">
                                         {{ Auth::user()->name }}
 
                                         <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">

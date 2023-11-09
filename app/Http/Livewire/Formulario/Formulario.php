@@ -14,7 +14,7 @@ class Formulario extends Component
 {
 
     public $ventaCliente,$selectClie,$clientes,$valor,$nombreClie,$apellidos,$cinit,$busqueda;
-    public $modalClie= false,$modalProd = false,$experimento;
+    public $modalClie= false,$modalProd = false,$experimento,$nuevoNumero,$stock;
     public $prod,$descripcion,$precioventa,$precio,$cantidad,$subtotal,$idProd;
     public $datosCliente,$arreglo="primero",$estado='PROFORMA',$listaProd=[];
     public $idventa,$dVenta,$lprod,$v=[],$lv=[],$actualizar,$venta,$cliente,$producto,$cont;
@@ -74,6 +74,7 @@ class Formulario extends Component
         }
 
 
+
         return view('livewire.formulario.formulario');
     }
 
@@ -112,6 +113,7 @@ class Formulario extends Component
         $this->producto = Producto::find($id);
         $this->descripcion = $this->producto->descripcion;
         $this->precio = $this->producto->precio;
+        $this->stock = $this->producto->stock;
         $this->cantidad = 0;
         $this->subtotal= $this->precio* $this->cantidad;
         array_push($this->listaProd,$id);
@@ -159,9 +161,29 @@ class Formulario extends Component
         else {
             $this->idventa = 0;
         }
+
+        switch ($this->estado) {
+            case 'PEDIDO':
+                $num = Venta::where('estado','=','PEDIDO')->count();
+                break;
+            case 'PROFORMA':
+                $num = Venta::where('estado','=','PROFORMA')->count();
+                break;
+            case 'CANCELADO':
+                $num = Venta::where('estado','=','CANCELADO')->count();
+                break;
+
+
+            default:
+                # code...
+                break;
+        }
+
+
         $v = Venta::updateOrCreate(
             ['id'=>$this->idventa],
-            ['estado'=>$this->estado,
+            ['numeroDoc'=>$num+1,
+            'estado'=>$this->estado,
             'cliente_id'=>$this->selectClie,
             'user_id'=>Auth::user()->id]);
 
@@ -177,14 +199,15 @@ class Formulario extends Component
                     ['cantidad'=>$elem->cantidad,
                     'precioventa'=>$elem->precio
                 ]);
-                $anterior = Producto::find($elem->id)->stock;
+                $anterior = Producto::find($elem->id)->salida;
+                $anteriorEntrada = Producto::find($elem->id)->entrada;
                 if ($v->estado=='PEDIDO')
                 {
 
                     Producto::updateOrCreate(['id'=>$elem->id],
                     [
 
-                        'stock'=>$anterior-$elem->cantidad,
+                        'salida'=>$anterior+$elem->cantidad,
 
                     ]);
 
@@ -195,11 +218,13 @@ class Formulario extends Component
                     Producto::updateOrCreate(['id'=>$elem->id],
                     [
 
-                        'stock'=>$anterior+$elem->cantidad,
+                        'salida'=>$anterior-$elem->cantidad,
+                        //'entrada'=>$anteriorEntrada+$elem->cantidad,
 
                     ]);
 
                 }
+
 
 
             }
