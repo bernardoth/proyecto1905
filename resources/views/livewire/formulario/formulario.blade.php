@@ -1,4 +1,5 @@
 <div x-data="mifuncion()" x-init="start()"  class="bg-gray-800 h-screen mt-0 py-0">
+
     <div class="container mx-auto my-auto ">
 
             <div class=" grid grid-cols-8 grid-rows-7 py-2 gap-2 text-left mt-3">
@@ -23,6 +24,7 @@
                     class="bg-gray-500 mx-auto w-full border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm"
                     type="text" name="nomclie" id="nomclie">
 
+
                 </div>
                 <div class="col-span-2 text-white  ">
                     <label class="block" for="nombreClie">Apellidos: </label>
@@ -38,6 +40,7 @@
                     <input wire:model="cinit"
                     class="bg-gray-500 mx-auto border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm"
                     type="text" name="cinit" id="cinit">
+
                 </div>
 
                 <div class="col-span-2 text-white self-center">
@@ -73,9 +76,9 @@
                         class="w-full bg-gray-500" type="number"  min=1 max=9999999 name="cantidad" id="cantidad">
                     </div>
                     <div class="cols-span-1 text-gray-300">
-                        <label class="block " for="precio">Precio:  </label>
-                        <input wire:model="precio"
-                        class="w-full bg-gray-500" type="number" readonly name="precio" id="precio">
+                        <label class="block " for="precioventa">Precio:  </label>
+                        <input wire:model="precioventa"
+                        class="w-full bg-gray-500" type="number" readonly name="precioventa" id="precioventa">
                     </div>
                     <div class="cols-span-1 text-gray-300">
                         <label class="block " for="precio">Sub Total:  </label>
@@ -151,7 +154,7 @@
 
                 </div>
                     <div>
-                        <button @click="datos()"
+                        <button @click="validacion()"
                         class="bg-green-500 hover:bg-green-400 col-start-8 col-end-8 px-3 py-2  pt-3 w-15 display: flex align-items: center">
                             Guardar
                         </button>
@@ -162,6 +165,7 @@
 
 
     </div>
+
 </div>
 
 @section('script')
@@ -188,7 +192,7 @@
                 }
             },
             subTotal:function(){
-                let precio = document.querySelector('#precio').value;
+                let precio = document.querySelector('#precioventa').value;
                 let cantidad = document.querySelector('#cantidad');
                 let subtotal = document.querySelector('#subtotal');
                 let stock = document.querySelector('#stock');
@@ -199,7 +203,7 @@
                 if (  Number(cantidad.value)<=Number(stock.value)) {
 
                     let valor = cantidad.value * precio;
-                    subtotal.value = valor;
+                    subtotal.value =Number(valor.toFixed(3));
                     //console.log('cambio change: '+valor);
                 }else{
                     alert('Cantidad en Stock insuficiente');
@@ -212,9 +216,10 @@
             limpiar:function(){
                 document.querySelector('#descripcion').value = '';
                 document.querySelector('#cantidad').value = '';
-                document.querySelector('#precio').value = '';
+                document.querySelector('#precioventa').value = '';
                 document.querySelector('#subtotal').value = '';
             },
+            /*
             agregar:function(){
 
                 let lista = {};
@@ -222,7 +227,7 @@
                 lista.id = document.querySelector('#id').value,
                 lista.descripcion = document.querySelector('#descripcion').value;
                 lista.cantidad = document.querySelector('#cantidad').value;
-                lista.precio = document.querySelector('#precio').value;
+                lista.precio = document.querySelector('#precioventa').value;
                 lista.subtotal = document.querySelector('#subtotal').value;
                 this.prod.push(lista);
 
@@ -232,7 +237,7 @@
                 console.log(this.prod);
 
 
-                },
+                },*/
 
             agregar:function(){
                 if (document.querySelector('#cantidad').value>0) {
@@ -242,10 +247,10 @@
                         lista.descripcion = document.querySelector('#descripcion').value;
                         lista.cantidad = document.querySelector('#cantidad').value;
                         var num = document.querySelector('#cantidad').value;
-                        lista.precio = document.querySelector('#precio').value;
+                        lista.precio = document.querySelector('#precioventa').value;
                         lista.subtotal = document.querySelector('#subtotal').value;
                         //this.limpiar();
-                        console.log(this.prod)
+                        //console.log(this.prod)
                         this.prod.forEach((element,item,arr) =>
                         {
                             if (element.id==lista.id) {
@@ -281,6 +286,23 @@
 
 
                 },
+                validacion:function()
+                {   var que = document.querySelector('#nomclie').value;
+                    console.log(que.length);
+                    if (que.length==0) {
+                        alert('Debe llenar el nombre');
+                    console.log(que);
+
+                    }
+                    if(this.prod.length==0){
+                        alert('Debe seleccionar productos');
+                    }
+                    else
+                    {
+                        this.datos();
+                        //console.log(this.prod);
+                    }
+                },
 
                 mostrar:function(){
             this.numero = this.prod.length;
@@ -301,6 +323,7 @@
             });
         },
         nuevoguardar:function () {
+
             let nombre='';
             let cinit='';
             let estado='';
@@ -326,6 +349,7 @@
         datos:function(){
             //this.convertir();
             //this.prod=[];
+
             this.nuevo = JSON.stringify(this.prod);
             Livewire.emit('guardar');
             console.log('enviado para guardar');

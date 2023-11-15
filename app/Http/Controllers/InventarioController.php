@@ -18,7 +18,7 @@ class InventarioController extends Controller
         $this->pdf = new myPdf('L','mm',array(210,330));
         $this->pdf->AddPage('L');
         $this->pdf->AddFont('Helvetica','','helvetica.php');
-        $this->pdf->SetFont('Helvetica','',14);
+        $this->pdf->SetFont('Helvetica','',16);
         //$this->pdf->Cell(100);
         $this->pdf->Cell(0,20, 'KARDEX PRODUCTO', 0,0 ,'C');
         $this->pdf->Image('imagenes/logoHammer.png',16,16,17,16);

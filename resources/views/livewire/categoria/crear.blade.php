@@ -16,11 +16,13 @@
                         <div class="mb-4">
                             <label for="codigo" class="block text-gray-700 text-sm font-bold mb-2">Codigo:</label>
                             <input type="number"  min="100" max="990" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="codigo" wire:model="codigo">
+                            @error('codigo') <span class="error text-red-500">{{ $message }}</span> @enderror
                         </div>
 
                         <div class="mb-4">
                             <label for="nombre" class="block text-gray-700 text-sm font-bold mb-2">Nombre:</label>
                             <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="nombre" wire:model="nombre">
+                            @error('nombre') <span class="error text-red-500">{{ $message }}</span> @enderror
                         </div>
 
 

@@ -18,6 +18,7 @@ class ExportController extends Controller
         $fecha2 = $fecha->format('d-m-Y');
         $venta=Venta::find($id);
         $cliente = Cliente::find($venta->cliente_id);
+        $v=$venta->estado;
         $prodjson = $venta->productos;
         $prod = json_decode($prodjson);
         $this->pdf = new myPdf();
@@ -25,7 +26,13 @@ class ExportController extends Controller
         $this->pdf->AddFont('Helvetica','','helvetica.php');
         $this->pdf->SetFont('Helvetica','',16);
         //$this->pdf->Cell(100);
-        $this->pdf->Cell(0, 30, 'PROFORMA', 'T', 1, 'C');
+        if ($v=='PEDIDO') {
+            $this->pdf->Cell(0, 30, 'NOTA DE VENTA', 'T', 1, 'C');
+        }
+        else {
+            $this->pdf->Cell(0, 30, 'PROFORMA', 'T', 1, 'C');
+        }
+
         $this->pdf->SetFont('Helvetica','',10);
         $this->pdf->Cell(0, -20, 'informacion adicional', 0, 1, 'C');
         //$this->pdf->Output('S',$nombre->toDateString(),true);

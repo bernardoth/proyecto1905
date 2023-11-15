@@ -9,11 +9,16 @@ use App\Models\Categoria;
 class Productos extends Component
 {
     use WithPagination;
-    public $productosl,$search,$codigo,$descripcion,$precio,$stock,$estado,$categoria_id,$idprod;
+    public $productosl,$search,$codigo,$descripcion,$precioventa,$preciocompra,$stockinicial,$estado='ACTIVO',$categoria_id='',$idprod;
     public $cat,$nomcat,$idcat,$cant_min;
     public $modal = 0;
 
-
+    protected $rules =[
+        'codigo'=>'required',
+        'descripcion'=>'required',
+        'precioventa'=>'required',
+        'categoria_id'=>'required|min:1'
+    ];
     public function render()
     {
         /*
@@ -36,12 +41,13 @@ class Productos extends Component
     }
     public function guardar()
     {
+        $this->validate();
         Producto::updateOrCreate(['id'=>$this->idprod],
         [
             'codigo'=>$this->codigo,
             'descripcion'=>$this->descripcion,
-            'precio'=>$this->precio,
-            'stock'=>$this->stock,
+            'precioventa'=>$this->precioventa,
+            'stockinicial'=>$this->stockinicial,
             'estado'=>$this->estado,
             'cant_min'=>$this->cant_min,
             'categoria_id'=>$this->categoria_id
@@ -61,8 +67,8 @@ class Productos extends Component
         $this->idprod = $id;
         $this->codigo = $productol->codigo;
         $this->descripcion = $productol->descripcion;
-        $this->precio = $productol->precio;
-        $this->stock = $productol->stock;
+        $this->precioventa = $productol->precioventa;
+        $this->stockinicial = $productol->stockinicial;
         $this->estado = $productol->estado;
         $this->cant_min = $productol->cant_min;
         $this->categoria_id =$productol->categoria_id;
@@ -89,8 +95,8 @@ class Productos extends Component
     {
         $this->codigo='';
         $this->descripcion='';
-        $this->precio='';
-        $this->stock='';
+        $this->precioventa='';
+        $this->stockinicial='';
         $this->estado='';
         $this->cant_min='';
         $this->categoria_id='';

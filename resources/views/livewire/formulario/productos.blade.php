@@ -14,6 +14,7 @@
                         <tr>
                             <th>Codigo</th>
                             <th>Descripcion</th>
+                            <th>Precio</th>
                             <th>Stock</th>
                             <th>Accion</th>
 
@@ -26,6 +27,7 @@
                         <tr>
                             <td class="px-5">{{$prod->codigo}}</td>
                             <td class="px-5">{{$prod->descripcion}}</td>
+                            <td class="px-5">{{$prod->precioventa}}</td>
                             <td class="px-5">{{$prod->stock}}</td>
 
                             <td class="px-5">

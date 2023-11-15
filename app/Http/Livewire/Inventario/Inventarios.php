@@ -11,9 +11,9 @@ use Livewire\Component;
 class Inventarios extends Component
 {
     //use WithPagination;
-    public $productosl,$search,$codigo,$descripcion,$precio,$stock,$estado,$categoria_id,$idprod;
+    public $productosl,$search,$codigo,$descripcion,$precioventa,$preciocompra,$stock,$estado,$categoria_id,$idprod;
     public $cat,$nomcat,$idcat,$cant_min,$productos;
-    public $modal,$fechainicio,$fechafin,$tipo;
+    public $modal,$fechainicio,$fechafin,$tipo='TODOS';
 
     public function mount()
     {
@@ -26,27 +26,42 @@ class Inventarios extends Component
     public function render()
     {
         $this->cat = Categoria::all();
-        if ($this->search !='') {
-            $this->productos = Producto::select(
-                'productos.id',
-                'productos.descripcion',
-                'productos.precio',
-                'productos.precioventa',
-                'productos.stockinicial',
-                'productos.entrada',
-                'productos.salida',
-                'productos.estado',
-                'categorias.nombre')->
-            join('categorias','categorias.id','=','productos.categoria_id')->
-            where('productos.descripcion','like','%'.$this->search.'%')->
-            get()
-            ;# code...
-        }
-        else{
-            $this->productos = null;
-        }
+
+            if ($this->search !='' )
+            {
+                $this->productos = Producto::select(
+                    'productos.id',
+                    'productos.descripcion',
+                    'productos.preciocompra',
+                    'productos.precioventa',
+                    'productos.stockinicial',
+                    'productos.entrada',
+                    'productos.salida',
+                    'productos.estado',
+                    'categorias.nombre')->
+                join('categorias','categorias.id','=','productos.categoria_id')->
+                where('productos.descripcion','like','%'.$this->search.'%')->
+                get();
+
+            }
+            else
+            {
+                if($this->tipo=='MINIMOS')
+                {
+                $this->productos = DB::select('call prodMin()');
+               //
+                }
+                else
+                {
+                    $this->productos = null;
+                }
+
+            }
 
         return view('livewire.inventario.inventarios');
+
+    }
+
 
         /*
         return view('livewire.inventario.inventarios',[
@@ -56,5 +71,6 @@ class Inventarios extends Component
             */
 
 
-    }
 }
+
+

@@ -12,6 +12,19 @@ class Users extends Component
     public $carnet,$celular,$direccion;
     public $modal=0;
 
+    protected function rules()
+    {
+        return
+     [
+        'name' => 'required|min:3',
+        'email' => ['required', 'email', 'not_in:' . auth()->user()->email],
+        'apellidopaterno'=>'required',
+        'apellidomaterno'=>'required',
+        'carnet'=>'required',
+        'celular'=>'required'
+    ];
+    }
+
     public function render()
     {
         $this->usuarios =User::all();
@@ -24,6 +37,7 @@ class Users extends Component
     }
     public function guardar()
     {
+        $this->validate();
         User::updateOrCreate(
             ['id'=>$this->iduser],
             [

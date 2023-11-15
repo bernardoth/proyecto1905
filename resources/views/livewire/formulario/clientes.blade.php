@@ -5,8 +5,8 @@
 
         <div class="inline-block align-bottom  rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle " role="dialog" aria-modal="true" aria-labelledby="modal-headline">
             <div class="py-5 bg-slate-600 shadow-md shadow-indigo-800/50 px-5">
-                <div id ="cabeza" class="text-bold font-lg py-2">Lista de Clientes</div>
-                
+                <div id ="cabeza" class="text-white text-bold font-lg py-2">Lista de Clientes</div>
+
                 <input type="text" class="py-2 mb-2 bg-gray-700 text-white" wire:model="search">
                 <button wire:click="cerrarModal()" class="bg-blue-500 absolute top-3  right-6 hover:bg-blue-700 text-white font-bold py-2 px-6 ">
                     Cerrar
@@ -25,11 +25,11 @@
                     <tbody id="lista" >
                         @foreach ($clientes as $clie)
                         <tr>
-                            <td class="px-5">{{$clie->id}}</td>
-                            <td class="px-5">{{$clie->nombres}}</td>
-                            <td class="px-5">{{$clie->apellidos}}</td>
-                            <td class="px-5">{{$clie->ci}}</td>
-                            <td class="px-5">
+                            <td class="text-white px-5">{{$clie->id}}</td>
+                            <td class="text-white px-5">{{$clie->nombres}}</td>
+                            <td class="text-white px-5">{{$clie->apellidos}}</td>
+                            <td class="text-white px-5">{{$clie->ci}}</td>
+                            <td class="text-white px-5">
                                 <button wire:click="seleccion({{$clie->id}})"   id="boton" class="bg-green-500  hover:bg-green-700 text-white font-bold py-2 px-6 ">
                                     Seleccionar
                                 </button>

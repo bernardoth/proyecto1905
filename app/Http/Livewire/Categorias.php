@@ -11,6 +11,11 @@ class Categorias extends Component
     public $categorias,$search,$codigo,$nombre,$idcat;
     public $modal=0;
 
+    protected $rules=[
+        'codigo'=>'required',
+        'nombre'=>'required|min:4'
+    ];
+
     public function render()
 
     {
@@ -28,6 +33,7 @@ class Categorias extends Component
 
     public function guardar()
     {
+        $this->validate();
         Categoria::updateOrCreate(['id'=>$this->idcat],
         [
             'codigo'=>$this->codigo,

@@ -10,6 +10,11 @@ class Proveedors extends Component
     public $listaProv,$search,$modal=0,$numeroDoc,$estado,$nombres,$apellidos,$correo,$direccion,$cinit;
     public $celular,$idprov;
 
+    protected $rules=[
+        'nombres'=>'required|min:2',
+        'cinit'=>'required'
+    ];
+
     public function render()
     {
         $this->listaProv = Proveedor::where('nombres','like','%'.$this->search.'%')->
@@ -19,10 +24,13 @@ class Proveedors extends Component
     public function crear()
     {
         $this->modal = 1;
+        $this->limpiar();
+        $this->abrirModal();
 
     }
     public function guardar()
     {
+        $this->validate();
         Proveedor::updateOrCreate(['id'=>$this->idprov],
         [
 
@@ -46,6 +54,7 @@ class Proveedors extends Component
         Proveedor::find($id)->delete();
         session()->flash('message', 'Registro eliminado correctamente');
     }
+
 
 
     public function limpiar()

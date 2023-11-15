@@ -32,7 +32,7 @@ return new class extends Migration
             FROM ventas
             INNER JOIN producto_venta on(ventas.id=producto_venta.venta_id)
             WHERE (DATE(ventas.created_at)>=fechainicio) AND
-            (DATE(ventas.created_at)<=fechafin)
+            (DATE(ventas.created_at)<=fechafin) AND prod = producto_venta.producto_id
             UNION
             SELECT
             compras.created_at AS fecha,
@@ -43,7 +43,7 @@ return new class extends Migration
             FROM compras
             INNER JOIN compra_producto on(compras.id=compra_producto.compra_id)
             WHERE (DATE(compras.created_at)>=fechainicio) AND
-            (DATE(compras.created_at)<=fechafin))
+            (DATE(compras.created_at)<=fechafin) AND prod = compra_producto.producto_id)
             ORDER by fecha asc;
 
 

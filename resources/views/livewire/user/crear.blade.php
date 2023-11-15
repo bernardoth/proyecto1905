@@ -16,45 +16,55 @@
                         </div>
                         <div class="mb-4">
                             <label for="nombres" class="block text-gray-700 text-sm font-bold mb-2">Nombres:</label>
-                            <input type="text"   class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            <input type="text" required
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                              id="name" wire:model="name">
+                             @error('name') <span class="error text-red-500">{{ $message }}</span> @enderror
                         </div>
 
                         <div class="grid grid-cols-2 gap-1">
                             <div class="mb-4">
                                 <label for="apellidopaterno" class="block text-gray-700 text-sm font-bold mb-2">Apellido Paterno</label>
-                                <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                <input type="text" required
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                              id="apellidopaterno" wire:model="apellidopaterno">
+                             @error('apellidopaterno') <span class="error text-red-500">{{ $message }}</span> @enderror
                             </div>
                             <div class="mb-4">
-                                <label for="apellidopaterno" class="block text-gray-700 text-sm font-bold mb-2">Apellido Materno</label>
+                                <label for="apellidopaterno" required
+                                 class="block text-gray-700 text-sm font-bold mb-2">Apellido Materno</label>
                                 <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                              id="apellidomaterno" wire:model="apellidomaterno">
+                             @error('apellidomaterno') <span class="error text-red-500">{{ $message }}</span> @enderror
+
                             </div>
 
                             <div class="mb-4">
                             <label for="carnet" class="block text-gray-700 text-sm font-bold mb-2">Carnet</label>
                             <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             id="carnet" wire:model="carnet">
+                            @error('carnet') <span class="error text-red-500">{{ $message }}</span> @enderror
                             </div>
 
                             <div class="mb-4">
                             <label for="celular" class="block text-gray-700 text-sm font-bold mb-2">Celular</label>
-                            <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            <input type="number" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             id="celular" wire:model="celular">
+                            @error('celular') <span class="error text-red-500">{{ $message }}</span> @enderror
                             </div>
                             <div>
                                 <label for="cargo" class="block text-gray-700 text-sm font-bold mb-2">Cargo</label>
-                                <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="cargo" id="cargo">Cargo
-                                    <option value="ADMIN">ADMIN</option>
-                                    <option value="VENDEDOR" selected>VENDEDOR</option>
-                                    <option value="NOOB">NOOB</option>
+                                <select wire:model="cargo" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="cargo" id="cargo">Cargo
+                                    <option value="VENDEDOR">VENDEDOR</option>
+                                    <option selected value="NOOB" >NOOB</option>
+                                    <option  value="ADMIN">ADMIN</option>
                                 </select>
                             </div>
                             <div class="mb-4">
                                 <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Correo:</label>
                                 <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 id="email" wire:model="email">
+                                @error('email') <span class="error text-red-500">{{ $message }}</span> @enderror
                             </div>
                         </div>
 

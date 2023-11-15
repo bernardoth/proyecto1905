@@ -17,39 +17,50 @@
                             <label for="codigo" class="block text-gray-700 text-sm font-bold mb-2">Codigo:</label>
                             <input type="text"   class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             id="codigo" wire:model="codigo">
+                            @error('codigo') <span class="error text-red-500">{{ $message }}</span> @enderror
                         </div>
 
                         <div class="mb-4">
                             <label for="descripcion" class="block text-gray-700 text-sm font-bold mb-2">Descripcion:</label>
                             <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             id="descripcion" wire:model="descripcion">
+                            @error('descripcion') <span class="error text-red-500">{{ $message }}</span> @enderror
                         </div>
                         <div class="mb-4">
-                            <label for="precio" class="block text-gray-700 text-sm font-bold mb-2">Precio Venta:</label>
+                            <label for="precioventa" class="block text-gray-700 text-sm font-bold mb-2">Precio Venta:</label>
                             <input type="number"  step="any" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            id="precio" wire:model="precio">
+                            id="precioventa" wire:model="precioventa">
+                            @error('cant_min') <span class="error text-red-500">{{ $message }}</span> @enderror
                         </div>
                         <div class="mb-4">
-                            <label for="stock" class="block text-gray-700 text-sm font-bold mb-2">Stock:</label>
+                            <label for="stock" class="block text-gray-700 text-sm font-bold mb-2">Stock Inicial:</label>
                             <input type="number" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            id="stock" wire:model="stock">
+                            id="stockinicial" wire:model="stockinicial">
+                            @error('stockinicial') <span class="error text-red-500">{{ $message }}</span> @enderror
                         </div>
                         <div class="mb-4">
                             <label for="estado" class="block text-gray-700 text-sm font-bold mb-2">Estado:</label>
-                            <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            <!--<input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="estado" wire:model="estado"> -->
+                            <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             id="estado" wire:model="estado">
+                                <option selected value="ACTIVO">ACTIVO</option>
+                                <option  value="INACTIVO">INACTIVO</option>
+                            </select>
                         </div>
                         <div class="mb-4">
                             <label for="cant_min" class="block text-gray-700 text-sm font-bold mb-2">Cantidad Minima:</label>
                             <input type="number" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            id="cant-min" wire:model="cant_min">
+                            id="cant_min" wire:model="cant_min">
+                            @error('cant_min') <span class="error text-red-500">{{ $message }}</span> @enderror
                         </div>
+<!--
                         <div class="mb-4">
 
                             <input type="hidden" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             id="categoria_id" wire:model="categoria_id">
                         </div>
-
+-->
 
 
 
@@ -58,9 +69,11 @@
                             <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             id="categoria_id" wire:model="categoria_id">
                             @foreach ($cat as $op)
-                                <option value="{{$op->id}}">{{$op->nombre}}</option>
+                                <option selected value=""></option>
+                                <option  value="{{$op->id}}">{{$op->nombre}}</option>
                             @endforeach
                             </select>
+                            @error('categoria_id') <span class="error text-red-500">{{ $message }}</span> @enderror
                         </div>
 
 

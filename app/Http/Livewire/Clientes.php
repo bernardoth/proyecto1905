@@ -10,6 +10,13 @@ class Clientes extends Component
     public $clientes,$search,$nombres,$apellidos,$correo,$celular,$ci,$idclie;
     public $modal = 0;
 
+    protected $rules=[
+        'nombres'=>'required',
+
+        'celular'=>'required',
+
+    ];
+
 
     public function render()
     {
@@ -26,6 +33,7 @@ class Clientes extends Component
     }
     public function guardar()
     {
+        $this->validate();
         Cliente::updateOrCreate(['id'=>$this->idclie],
         [
             'nombres'=>$this->nombres,

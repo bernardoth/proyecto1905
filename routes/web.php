@@ -17,6 +17,8 @@ use App\Http\Livewire\Inventario\Inventarios;
 use App\Http\Controllers\ExportController;
 use App\Http\Controllers\InventarioController;
 use App\Http\Controllers\VentasreporteController;
+use App\Http\Controllers\MinimosController;
+
 
 
 
@@ -67,6 +69,7 @@ Route::middleware([
     Route::get('/notaventa/{id}',[ExportController::class,'miReporte']);
     Route::get('/reportesventas/{fechainicio}/{fechafin}',[VentasreporteController::class,'reportesVentas']);
     Route::get('/inventarioreporte/{fechainicio}/{fechafin}/{id}',[InventarioController::class,'inventarioReporte']);
+    Route::get('/minimos',[MinimosController::class,'stockminimo']);
 
 
 

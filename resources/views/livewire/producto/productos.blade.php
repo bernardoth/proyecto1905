@@ -38,7 +38,7 @@
                             <td class="border px-4 py-2">{{ $prod->id }}</td>
                             <td class="border px-4 py-2">{{ $prod->codigo }}</td>
                             <td class="border px-4 py-2">{{ $prod->descripcion}}</td>
-                            <td class="border px-4 py-2">{{ $prod->precio}}</td>
+                            <td class="border px-4 py-2">{{ $prod->precioventa}}</td>
                             <td class="border px-4 py-2">{{ $prod->stock}}</td>
                             <td class="border px-4 py-2">{{ $prod->estado}}</td>
                             @foreach ($cat as $c)
@@ -59,7 +59,7 @@
                 </tbody>
 
             </table>
-            <div class="py-4">
+            <div class="py-4 text-gray-100">
                 {{$productos->links()}}
             </div>
         </div>

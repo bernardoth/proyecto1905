@@ -13,7 +13,7 @@ use App\Models\User;
 class Formularioc extends Component
 {
     public $modProv,$nombreProv,$apellidos,$cinit,$valor,$modalProv,$modalProd,$idprod,$proveedor,$idProd;
-    public $selectProv,$idcompra,$listaProd=[],$precio,$cantidad,$producto,$descripcion,$subtotal;
+    public $selectProv,$idcompra,$listaProd=[],$precioventa,$preciocompra,$cantidad,$producto,$descripcion,$subtotal;
     public $actualizar = 0,$compra,$arreglo="primero",$v=[],$lv=[],$estado='PEDIDO',$numeroDoc;
     protected $listeners = ['cerrarModal','addProv','addProducto','cerrarModal','guardarCompra','editaCompra'];
 
@@ -36,7 +36,7 @@ class Formularioc extends Component
                 $v['id'] = $idlista;
                 $v['descripcion'] = $deslista;
                 $v['cantidad'] =$cantidadlista ;
-                $v['precioventa'] = $preciolista;
+                $v['preciocompra'] = $preciolista;
                 $v['subtotal'] = $cantidadlista * $preciolista;
                 array_push($this->lv,$v);
 
@@ -107,9 +107,9 @@ class Formularioc extends Component
         $this->idProd = $id;
         $this->producto = Producto::find($id);
         $this->descripcion = $this->producto->descripcion;
-        $this->precio = $this->producto->precio;
+        $this->preciocompra = $this->producto->preciocompra;
         $this->cantidad = 0;
-        $this->subtotal= $this->precio* $this->cantidad;
+        $this->subtotal= $this->preciocompra* $this->cantidad;
         array_push($this->listaProd,$id);
         $this->cont = count($this->listaProd);
     }

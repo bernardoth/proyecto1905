@@ -50,9 +50,15 @@
                     <div class="flex space-x-4">
                         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                         <a href="{{url('/dashboard')}}" class="bg-gray-700 text-gray-300  hover:bg-gray-500 hover:text-white w-24 mt-2 px-3 py-2 rounded-md text-sm font-medium"
-                            aria-current="page">Dashboard</a>
+                            aria-current="page">Inicio</a>
+                        <a href="{{}}" class="bg-gray-700 text-gray-300  hover:bg-gray-500 hover:text-white w-24 mt-2 px-3 py-2 rounded-md text-sm font-medium"
+                        aria-current="page">Inicio</a>
                             <a href="{{url('/user/users')}}" class="bg-gray-700 text-gray-300 hover:bg-gray-500 hover:text-white w-24 mt-2 px-3 py-2 rounded-md text-sm font-medium"
                             aria-current="page">Usuarios</a>
+                        <a href="{{ url('/cliente/clientes') }}"
+                            class="bg-gray-700 w-24 mt-2 text-center text-gray-300 hover:bg-gray-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                            Cliente
+                        </a>
                         <a href="{{ url('/cliente/clientes') }}"
                             class="bg-gray-700 w-24 mt-2 text-center text-gray-300 hover:bg-gray-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                             Cliente
@@ -191,7 +197,7 @@
         <div class="space-y-1 px-2 pt-2 pb-3">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
-                aria-current="page">Dashboard</a>
+                aria-current="page">pep</a>
 
             <a href="#"
                 class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>

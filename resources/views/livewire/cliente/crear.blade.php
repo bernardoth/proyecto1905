@@ -18,22 +18,26 @@
                             <label for="nombres" class="block text-gray-700 text-sm font-bold mb-2">Nombres:</label>
                             <input type="text"   class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                              id="nombres" wire:model="nombres">
+                             @error('nombres') <span class="error text-red-500">{{ $message }}</span> @enderror
                         </div>
 
                         <div class="mb-4">
                             <label for="apellidos" class="block text-gray-700 text-sm font-bold mb-2">Apellidos:</label>
                             <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                              id="apellidos" wire:model="apellidos">
+
                         </div>
                         <div class="mb-4">
                             <label for="correo" class="block text-gray-700 text-sm font-bold mb-2">Correo:</label>
-                            <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            <input type="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             id="correo" wire:model="correo">
                         </div>
                         <div class="mb-4">
                             <label for="celular" class="block text-gray-700 text-sm font-bold mb-2">Celular:</label>
-                            <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            <input type="number" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             id="celular" wire:model="celular">
+                            @error('celular') <span class="error text-red-500">{{ $message }}</span> @enderror
+
                         </div>
                         <div class="mb-4">
                             <label for="ci" class="block text-gray-700 text-sm font-bold mb-2">CI:</label>

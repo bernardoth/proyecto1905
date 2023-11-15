@@ -77,8 +77,8 @@
                     </div>
                     <div class="cols-span-1 text-gray-300">
                         <label class="block " for="precio">Precio:  </label>
-                        <input wire:model="precio"
-                        class="w-full bg-gray-500" type="number" readonly name="precio" id="precio">
+                        <input wire:model="preciocompra"
+                        class="w-full bg-gray-500" type="number" readonly name="preciocompra" id="preciocompra">
                     </div>
                     <div class="cols-span-1 text-gray-300">
                         <label class="block " for="precio">Sub Total:  </label>
@@ -154,7 +154,7 @@
 
                 </div>
                     <div>
-                        <button @click="datos()"
+                        <button @click="validacion()"
                         class="bg-green-500 hover:bg-green-400 col-start-8 col-end-8 px-3 py-2  pt-3 w-15 display: flex align-items: center">
                             Guardar
                         </button>
@@ -189,7 +189,7 @@
                 }
             },
             subTotal:function(){
-                let precio = document.querySelector('#precio').value;
+                let precio = document.querySelector('#preciocompra').value;
                 let cantidad = document.querySelector('#cantidad');
                 let subtotal = document.querySelector('#subtotal');
 
@@ -205,7 +205,7 @@
             limpiar:function(){
                 document.querySelector('#descripcion').value = '';
                 document.querySelector('#cantidad').value = '';
-                document.querySelector('#precio').value = '';
+                document.querySelector('#preciocompra').value = '';
                 document.querySelector('#subtotal').value = '';
             },
             agregar:function(){
@@ -215,7 +215,7 @@
                 lista.id = document.querySelector('#id').value,
                 lista.descripcion = document.querySelector('#descripcion').value;
                 lista.cantidad = document.querySelector('#cantidad').value;
-                lista.precio = document.querySelector('#precio').value;
+                lista.precio = document.querySelector('#preciocompra').value;
                 lista.subtotal = document.querySelector('#subtotal').value;
                 this.prod.push(lista);
 
@@ -265,6 +265,31 @@
             this.nuevo = JSON.stringify(this.prod);
             //console.log(this.prod);
             //console.log(this.nuevo);
+
+        },
+        validacion:function()
+        {
+            var que = document.querySelector('#nombreProv').value;
+            var doc = document.querySelector('#numeroDoc').value;
+                    console.log(que.length);
+                    if (que.length==0 ) {
+                        alert('Debe llenar el nombre');
+
+
+                    }
+                    if (doc.length==0 ) {
+                        alert('Debe llenar el Numero de documento');
+
+
+                    }
+                    if(this.prod.length==0){
+                        alert('Debe seleccionar productos');
+                    }
+                    else
+                    {
+                        this.datos();
+                        //console.log(this.prod);
+                    }
 
         },
         datos:function(){

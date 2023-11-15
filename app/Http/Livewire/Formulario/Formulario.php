@@ -15,11 +15,12 @@ class Formulario extends Component
 
     public $ventaCliente,$selectClie,$clientes,$valor,$nombreClie,$apellidos,$cinit,$busqueda;
     public $modalClie= false,$modalProd = false,$experimento,$nuevoNumero,$stock;
-    public $prod,$descripcion,$precioventa,$precio,$cantidad,$subtotal,$idProd;
-    public $datosCliente,$arreglo="primero",$estado='PROFORMA',$listaProd=[];
+    public $prod,$descripcion,$precioventa,$preciocompra,$cantidad,$subtotal,$idProd;
+    public $datosCliente,$arreglo="",$estado='PROFORMA',$listaProd=[];
     public $idventa,$dVenta,$lprod,$v=[],$lv=[],$actualizar,$venta,$cliente,$producto,$cont;
 
     protected $listeners = ['addCliente','cerrarModal','addProducto','guardar','editaVenta'];
+    
 
     public function mount($valor)
     {   if ($valor!=0)
@@ -112,10 +113,10 @@ class Formulario extends Component
         $this->idProd = $id;
         $this->producto = Producto::find($id);
         $this->descripcion = $this->producto->descripcion;
-        $this->precio = $this->producto->precio;
+        $this->precioventa = $this->producto->precioventa;
         $this->stock = $this->producto->stock;
         $this->cantidad = 0;
-        $this->subtotal= $this->precio* $this->cantidad;
+        $this->subtotal= $this->precioventa* $this->cantidad;
         array_push($this->listaProd,$id);
         $this->cont = count($this->listaProd);
     }
@@ -135,6 +136,7 @@ class Formulario extends Component
     }
     public function guardar()
     {
+        //$this->validate();
         //$this->arreglo = $que;
         if (is_null($this->selectClie)) {
             $newClie = new Cliente();

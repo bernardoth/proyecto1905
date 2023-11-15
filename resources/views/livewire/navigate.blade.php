@@ -47,12 +47,16 @@
 
 
                 <div class="hidden sm:ml-6 sm:block">
-                    <div class="flex space-x-4">
+                    <div class="flex space-x-4 text-center">
                         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+
                         <a href="{{url('/dashboard')}}" class="bg-gray-700 text-gray-300  hover:bg-gray-500 hover:text-white w-24 mt-2 px-3 py-2 rounded-md text-sm font-medium"
-                            aria-current="page">Dashboard</a>
+                            aria-current="page">Inicio</a>
+                            @if (Auth::user()->cargo=='ADMIN')
                             <a href="{{url('/user/users')}}" class="bg-gray-700 text-gray-300 hover:bg-gray-500 hover:text-white w-24 mt-2 px-3 py-2 rounded-md text-sm font-medium"
                             aria-current="page">Usuarios</a>
+                            @endif
+
                         <a href="{{ url('/cliente/clientes') }}"
                             class="bg-gray-700 w-24 mt-2 text-center text-gray-300 hover:bg-gray-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                             Cliente
@@ -103,9 +107,7 @@
                                             Inventarios
                                         </x-jet-dropdown-link>
 
-                                        <x-jet-dropdown-link href="">
-                                                tres
-                                        </x-jet-dropdown-link>
+
 
 
                                         <div class="border-t border-gray-100"></div>
@@ -131,7 +133,7 @@
                                 </button>
                             @else
                                 <span class="inline-flex rounded-md">
-                                    <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-lg leading-4 font-medium rounded-md text-white bg-gray-900 hover:text-green-700 focus:outline-none transition">
+                                    <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-lg leading-4 font-medium rounded-md text-white bg-gray-900 hover:text-orange-500 focus:outline-none transition">
                                         {{ Auth::user()->name }}
 
                                         <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -144,9 +146,10 @@
 
                         <x-slot name="content">
                             <!-- Account Management -->
+                            <!--
                             <div class="block px-4 py-2 text-xs text-gray-400">
                                 {{ __('Manage Account') }}
-                            </div>
+                            </div> -->
 
                             <x-jet-dropdown-link href="{{ route('profile.show') }}">
                                 {{ __('Profile') }}
